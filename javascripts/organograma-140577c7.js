@@ -1,0 +1,1 @@
+(function(){var e,t;e=function(){function t(){}var e;return e=$(".responsive .trigger"),e.on("click",function(){var e,t;return t=$(this).attr("data-trigger"),e=$("#"+t),$(".content").removeClass("current"),e.addClass("current")}),t}(),t=new e}).call(this);
