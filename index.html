@@ -10,100 +10,501 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" type="text/javascript"></script>
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/site-31ec9339.css" relative="true" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/site-8abe74cd.css" relative="true" media="screen" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <section id='cover'>
-      <div class='container-fluid letter-header'>
-        <div class='container' id='logo'>
-          <div class='row'>
-            <div class='col-md-6'>
-              <img width="70%" src="images/logo-537ffb1f.png" />
-              <h1 style='font-size:44.4px; font-weight:bold;'>Relatório de atividades 2016</h1>
+    <nav class='navbar navbar-default navbar-fixed-top' style='text-align:center;'>
+      <div class='container-fluid'>
+        <div class='navbar-header'>
+          <button aria-expanded='false' class='navbar-toggle collapsed' data-target='#nav-collapse-xs' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
+        <div class='hidden-xs'>
+          <div class='collapse navbar-collapse' id='nav-collapse'>
+            <ul class='nav navbar-nav' id='nav-links'>
+              <li>
+                <a href='#fundacao'>A fundação</a>
+              </li>
+              <li>
+                <a href='#resultados'>Sobre 2016</a>
+              </li>
+              <li>
+                <a href='#partners'>parceiros</a>
+              </li>
+              <li class='hidden-xs'>
+                <a href='#' id='navbar-search'>
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+              <li>
+                <a class='i18n' href='en'>English</a>
+              </li>
+            </ul>
+            <ul class='nav navbar-nav' id='search-form-area'>
+              <li>
+                <form action='javascript:void();' class='navbar-form' id='f1' name='f1'>
+                  <div class='form-group'>
+                    <input class='form-control' id='t1' name='t1' placeholder='Buscar' size='20' type='text'>
+                    <button class='btn btn-default btn-blue' name='b1' type='submit' value='&lt;i class="fa fa-search"&gt;&lt;/i&gt;'>
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+                <li>
+                  <a href='javascript:void(0)' id='search-close'>
+                    <i class="fa fa-close"></i> fechar
+                  </a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='hidden-sm hidden-md hidden-lg'>
+          <div class='collapse navbar-collapse' id='nav-collapse-xs'>
+            <ul class='nav navbar-nav' id='nav-links'>
+              <li>
+                <a href='#timeline'>Como chegamos até aqui</a>
+              </li>
+              <li>
+                <a href='#fundacao'>A fundação</a>
+              </li>
+              <li>
+                <a href='#resultados'>Sobre 2015</a>
+              </li>
+              <li>
+                <a href='#partners'>parceiros</a>
+              </li>
+              <li class='hidden-xs'>
+                <a href='#' id='navbar-search'>
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+              <li>
+                <a class='i18n' href='en'>English</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class='cover' id='cover-1'>
+      <img class="img-responsive center-block" src="images/cover/1/logo-c6f03f4d.png" />
+    </section>
+    <section class='cover' id='cover-2'>
+      <ul class='list-unstyled uppercase cover-menu'>
+        <li>
+          <a data-behavior='project-link' data-project-id='1' href='javascript:void(0);'>
+            <h2 class='cover-title'>Marco legal da primeira infância</h2>
+          </a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="17" href="javascript:void(0);">o começo da vida</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="12" href="javascript:void(0);">educação 360º</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="3" href="javascript:void(0);">VI simpósio internacional</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.thelancet.com/">lancet</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="18" href="javascript:void(0);">em pauta</a>
+        </li>
+        <li style='margin-top: 40px;'>
+          <img class="img-responsive center-block" src="images/cover/next-8b92f10e.png" />
+        </li>
+      </ul>
+    </section>
+    <section class='cover' id='cover-3'>
+      <ul class='list-unstyled uppercase cover-menu'>
+        <li>
+          <a data-behavior="project-link" data-project-id="1" href="javascript:void(0);">marco legal</a>
+        </li>
+        <li>
+          <a data-behavior='project-link' data-project-id='17' href='javascript:void(0);'>
+            <h2 class='cover-title'>o começo da vida</h2>
+          </a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="12" href="javascript:void(0);">educação 360º</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="3" href="javascript:void(0);">VI simpósio internacional</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.thelancet.com/">lancet</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="18" href="javascript:void(0);">em pauta</a>
+        </li>
+        <li style='margin-top: 40px;'>
+          <img class="img-responsive center-block" src="images/cover/next-8b92f10e.png" />
+        </li>
+      </ul>
+    </section>
+    <section class='cover' id='cover-4'>
+      <ul class='list-unstyled uppercase cover-menu'>
+        <li>
+          <a data-behavior="project-link" data-project-id="1" href="javascript:void(0);">Marco legal</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="17" href="javascript:void(0);">o começo da vida</a>
+        </li>
+        <li>
+          <a data-behavior='project-link' data-project-id='12' href='javascript:void(0);'>
+            <h2 class='cover-title'>educação 360º</h2>
+          </a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="3" href="javascript:void(0);">VI simpósio internacional</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.thelancet.com/">lancet</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="18" href="javascript:void(0);">em pauta</a>
+        </li>
+        <li style='margin-top: 40px;'>
+          <img class="img-responsive center-block" src="images/cover/next-8b92f10e.png" />
+        </li>
+      </ul>
+    </section>
+    <section class='cover' id='cover-5'>
+      <ul class='list-unstyled uppercase cover-menu'>
+        <li>
+          <a data-behavior="project-link" data-project-id="1" href="javascript:void(0);">marco legal</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="17" href="javascript:void(0);">o começo da vida</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="12" href="javascript:void(0);">educação 360º</a>
+        </li>
+        <li>
+          <a data-behavior='project-link' data-project-id='3' href='javascript:void(0);'>
+            <h2 class='cover-title'>VI simpósio internacional</h2>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.thelancet.com/">lancet</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="18" href="javascript:void(0);">em pauta</a>
+        </li>
+        <li style='margin-top: 40px;'>
+          <img class="img-responsive center-block" src="images/cover/next-8b92f10e.png" />
+        </li>
+      </ul>
+    </section>
+    <section class='cover' id='cover-6'>
+      <ul class='list-unstyled uppercase cover-menu'>
+        <li>
+          <a data-behavior="project-link" data-project-id="1" href="javascript:void(0);">marco legal</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="17" href="javascript:void(0);">o começo da vida</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="12" href="javascript:void(0);">educação 360º</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="3" href="javascript:void(0);">VI simpósio internacional</a>
+        </li>
+        <li>
+          <a href='http://www.thelancet.com/' target='_blank'>
+            <h2 class='cover-title'>lancet</h2>
+          </a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="18" href="javascript:void(0);">em pauta</a>
+        </li>
+        <li style='margin-top: 40px;'>
+          <img class="img-responsive center-block" src="images/cover/next-8b92f10e.png" />
+        </li>
+      </ul>
+    </section>
+    <section class='cover' id='cover-7'>
+      <ul class='list-unstyled uppercase cover-menu'>
+        <li>
+          <a data-behavior="project-link" data-project-id="1" href="javascript:void(0);">marco legal</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="17" href="javascript:void(0);">o começo da vida</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="12" href="javascript:void(0);">educação 360º</a>
+        </li>
+        <li>
+          <a data-behavior="project-link" data-project-id="3" href="javascript:void(0);">VI simpósio internacional</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.thelancet.com/">lancet</a>
+        </li>
+        <li>
+          <a data-behavior='project-link' data-project-id='18' href='javascript:void(0);'>
+            <h2 class='cover-title'>em pauta</h2>
+          </a>
+        </li>
+        <li style='margin-top: 40px;'>
+          <img class="img-responsive center-block" src="images/cover/next-8b92f10e.png" />
+        </li>
+      </ul>
+    </section>
+    <div id='navbar-trigger'></div>
+    <section id='letter-intro'>
+      <div class='container letter-container'>
+        <div class='row'>
+          <div class='col-md-3 col-md-offset-2 text-center'>
+            <h3>
+              "Renovamos o nosso compromisso com a construção coletiva de uma sociedade melhor, e o nosso papel nesse processo é trabalhar pelo desenvolvimento integral da criança."
+            </h3>
+            <div class='author uppercase'>
+              <b>Dario Guarita Neto</b>
+              <p>Presidente do Conselho de Curadores</p>
+              <b>Guilherme Vidigal Andrade Gonçalves</b>
+              <p>Presidente do Conselho de Curadores (2012-2015)</p>
+              <b>Regina Vidigal Guarita</b>
+              <p>Presidente do Conselho de Curadores (2005-2012)</p>
+            </div>
+            <br>
+            <br>
+            <div class='letter-trigger visible-xs-block'>
+              <a data-letter="conselho" class="btn btn-lg btn-border uppercase btn-letter" href="javascript:void(0)">Leia a carta na íntegra</a>
+            </div>
+            <br>
+            <br>
+          </div>
+          <div class='col-md-3 col-md-offset-2 text-center'>
+            <h3>
+              “Para 2016, queremos mais resultados e mudanças, e assim continuamos nossa caminhada, inspirando-nos nas conquistas de outros e nos juntando a eles pela transformação do nosso país.”
+            </h3>
+            <div class='author uppercase'>
+              <b>Eduardo de C. Queiroz</b>
+              <p>Diretor-presidente da Fundação Maria Cecília Souto Vidigal</p>
+            </div>
+            <br>
+            <br>
+            <div class='letter-trigger visible-xs-block'>
+              <a data-letter="diretor" class="btn btn-lg btn-border uppercase btn-letter" href="javascript:void(0)">Leia a carta na íntegra</a>
+            </div>
+          </div>
+        </div>
+        <div class='row hidden-xs'>
+          <div class='col-md-3 col-md-offset-2 text-center'>
+            <div class='letter-trigger'>
+              <a data-letter="conselho" class="btn btn-lg btn-border uppercase btn-letter" href="javascript:void(0)">Leia a carta na íntegra</a>
+            </div>
+          </div>
+          <div class='col-md-3 col-md-offset-2 text-center'>
+            <div class='letter-trigger'>
+              <a data-letter="diretor" class="btn btn-lg btn-border uppercase btn-letter" href="javascript:void(0)">Leia a carta na íntegra</a>
             </div>
           </div>
         </div>
       </div>
-      <div id='navbar-trigger'></div>
-      <nav class='navbar navbar-default navbar-fixed-top'>
-        <div class='container-fluid'>
-          <div class='navbar-header'>
-            <button aria-expanded='false' class='navbar-toggle collapsed' data-target='#nav-collapse-xs' data-toggle='collapse' type='button'>
-              <span class='sr-only'>Toggle navigation</span>
-              <span class='icon-bar'></span>
-              <span class='icon-bar'></span>
-              <span class='icon-bar'></span>
-            </button>
+    </section>
+    <div id='letter'>
+      <div class='container letter-container' id='conselho'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <a class='btn btn-border pull-right' data-button='close-letter' href='javascript:void(0)'>
+              <i class="fa fa-close"></i>
+            </a>
           </div>
-          <div class='hidden-xs'>
-            <div class='collapse navbar-collapse' id='nav-collapse'>
-              <ul class='nav navbar-nav' id='nav-links'>
-                <li>
-                  <a href='#fundacao'>A fundação</a>
-                </li>
-                <li>
-                  <a href='#resultados'>Sobre 2016</a>
-                </li>
-                <li>
-                  <a href='#partners'>parceiros</a>
-                </li>
-                <li class='hidden-xs'>
-                  <a href='#' id='navbar-search'>
-                    <i class="fa fa-search"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class='i18n' href='en'>English</a>
-                </li>
-              </ul>
-              <ul class='nav navbar-nav' id='search-form-area'>
-                <li>
-                  <form action='javascript:void();' class='navbar-form' id='f1' name='f1'>
-                    <div class='form-group'>
-                      <input class='form-control' id='t1' name='t1' placeholder='Buscar' size='20' type='text'>
-                      <button class='btn btn-default btn-blue' name='b1' type='submit' value='&lt;i class="fa fa-search"&gt;&lt;/i&gt;'>
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </div>
-                  </form>
-                  <li>
-                    <a href='javascript:void(0)' id='search-close'>
-                      <i class="fa fa-close"></i> fechar
-                    </a>
-                  </li>
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8 col-md-offset-2'>
+            <h2 class='title light'>
+              Carta do conselho
+            </h2>
           </div>
-          <div class='hidden-sm hidden-md hidden-lg'>
-            <div class='collapse navbar-collapse' id='nav-collapse-xs'>
-              <ul class='nav navbar-nav' id='nav-links'>
-                <li>
-                  <a href='#timeline'>Como chegamos até aqui</a>
-                </li>
-                <li>
-                  <a href='#fundacao'>A fundação</a>
-                </li>
-                <li>
-                  <a href='#resultados'>Sobre 2015</a>
-                </li>
-                <li>
-                  <a href='#partners'>parceiros</a>
-                </li>
-                <li class='hidden-xs'>
-                  <a href='#' id='navbar-search'>
-                    <i class="fa fa-search"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class='i18n' href='en'>English</a>
-                </li>
-              </ul>
+        </div>
+        <div class='row text-justify'>
+          <div class='col-md-8 col-md-offset-2'>
+            <p>Há 50 anos, três gerações da nossa família atuam para deixar um legado que contribua, de alguma forma, para o desenvolvimento da sociedade brasileira. Abrindo os caminhos em 1965, Gastão Eduardo e Maria Cecília Souto Vidigal se dedicaram por quase quatro décadas à pesquisa de ponta na área de hematologia. Sempre por meio de parcerias, uniram-se para a disseminação do conhecimento no tema, traduzindo a então distante ciência para a sociedade. </p>
+            <p>Com o falecimento do patriarca em 2001, mudaram-se os rumos da Fundação, momento a partir do qual nós, da segunda e terceira gerações, compostas de filhos e netos, buscamos entender a importância da atuação da instituição no terceiro setor. Para além disso, olhamos para as reais demandas sociais naquele momento, o que nos possibilitou criar novas linhas de atuação e mecanismos sólidos de governança, como o estatuto e o fundo patrimonial, assegurando assim a perenidade das atividades da Fundação.</p>
+            <p>Foi em 2007, estimulados pela pesquisa apresentada pelo Dr. Saul Cypel, por uma vontade de todos e por uma oportunidade de fazer a diferença, que escolhemos a Primeira Infância (PI) como foco de atuação da Fundação. E por que a Primeira Infância? Porque é nesse período que vai da gestação aos 6 anos de idade, que a criança desenvolve a maior parte da sua estrutura cerebral, precisando ser olhada de maneira integral e integrada.</p>
+            <p>Porque os vínculos construídos nessa etapa e o entorno em que a criança se encontra vão influenciar de maneira significativa o desenvolvimento dela e sua vida no futuro. Além disso, a cada dólar investido na PI, há um retorno quatro a nove vezes maior, provando que, ao estimular o desenvolvimento infantil desde os primeiros anos de vida, a sociedade investe em um futuro melhor. Afinal, estamos falando de uma população de 19 milhões de crianças de 0 a 6 anos, hoje, no Brasil. </p>
+            <p>Nós empenhamos dia a dia no engajamento e na atuação em meio a academia, governo, outras organizações, profissionais e empresas para gerar cada vez mais projetos, desenvolver políticas públicas, fomentar programas e pesquisas inovadoras, aproximar ciência e sociedade e expandir o conhecimento sobre a PI.</p>
+            <p>Comemoramos resultados e nos orgulhamos em dizer que o nosso programa Primeiríssima Infância já é política pública, que apoiamos o processo de construção do Marco Legal da Primeira Infância, e sensibilizamos, somente ao longo deste ano, mais de 4 mil profissionais para a PI e atingimos mais de 860 inserções na mídia sobre o tema. </p>
+            <p>Renovamos o nosso compromisso com a construção coletiva de uma sociedade melhor, e o nosso papel nesse processo é trabalhar pelo desenvolvimento integral da criança.</p>
+            <p>Faça parte da nossa causa!</p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3 col-md-offset-2'>
+            <br>
+            <div class='text-sm uppercase'>
+              <b>Dario Guarita Neto</b>
+              <p>Presidente do Conselho de Curadores</p>
+              <b>Guilherme Vidigal Andrade Gonçalves</b>
+              <p>Ex-Presidente do Conselho de Curadores (2012-2015)</p>
+              <b>Regina Vidigal Guarita</b>
+              <p>ex-presidente do Conselho de Curadores (2005-2012)</p>
             </div>
           </div>
         </div>
-      </nav>
-    </section>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class='container letter-container' id='diretor'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <a class='btn btn-border pull-right' data-button='close-letter' href='javascript:void(0)'>
+              <i class="fa fa-close"></i>
+            </a>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-8 col-md-offset-2'>
+            <h2 class='title light'>
+              CARTA DO DIRETOR-PRESIDENTE
+            </h2>
+          </div>
+        </div>
+        <div class='row text-justify'>
+          <div class='col-md-8 col-md-offset-2'>
+            <p>
+              <b>
+                “Os homens trilham quase sempre caminhos abertos por outros e pautam suas ações sobre essas imitações, embora não possam repetir tudo na vida dos imitados nem igualar a sua virtù. Um homem prudente deve sempre seguir os caminhos abertos pelos grandes homens e espelhar-se nos que foram excelentes. Mesmo não alcançando a sua virtù, deve pelo menos mostrar algum indício dela e fazer como os arqueiros prudentes que, julgando muito distantes os alvos que pretendem alcançar e conhecendo bem o grau de exatidão de seu arco, orientam a mira para bem mais alto que o lugar destinado, não para atingir tal altura com a flecha, mas para poder, por meio de mira tão elevada, chegar ao objetivo. ”
+                <br>
+                Nicolau Maquiavel
+              </b>
+            </p>
+            <p>
+              Em 2015, a Fundação completou 50 anos.
+            </p>
+            <p>
+              Com alguma frequência, costumo mencionar
+              <b>a coragem e o olhar inovador dos seus criadores – Dr. Gastão Eduardo e Dona Maria Cecília.</b>
+              Ainda hoje não se encontram estabelecidos no Brasil os incentivos (fiscais, por exemplo) para a criação de fundações. Imaginem há 50 anos!
+            </p>
+            <p>
+              Ouso dizer que Dr. Gastão e Dona Maria Cecília não tinham noção de aonde esse projeto tão importante chegaria nos 30, 40, 50 anos de história.
+            </p>
+            <p>
+              Nas quatro décadas iniciais, o objetivo da Fundação foi incentivar a pesquisa na área da hematologia. Quando converso com aqueles que acompanharam desde o início, a Fundação é mencionada como referência de seriedade e de conhecimento técnico de qualidade para gerações de profissionais, impactando a vida de muitas pessoas e famílias brasileiras.
+            </p>
+            <p>
+              Em 2007, a Fundação assumiu um novo olhar, voltado para a geração e disseminação de conhecimento sobre a Primeira Infância (período que vai da gestação aos 6 anos de idade). Resgatei a primeira carta que falava sobre a “nova” Fundação, que continha uma mensagem de renovação pertinente para todos nós:
+            </p>
+            <p>
+              <b>
+                “Este é o primeiro ano em que a ‘nova’ Fundação Maria Cecília atua sob a égide de um novo estatuto, de nova governança corporativa, de novas perspectivas de programação...
+              </b>
+            </p>
+            <p>
+              <b>
+                ... é nesta faixa populacional que se constroem as bases para o futuro de todos os indivíduos e justamente neste momento a criança ainda é bastante negligenciada na sociedade brasileira. Acreditamos que a FMCSV possa dar uma contribuição expressiva ao tema.
+              </b>
+            </p>
+            <p>
+              <b>Regina Vidigal Guarita</b>
+              <br>
+              <b>Presidente do Conselho de Curadores – 2007”</b>
+            </p>
+            <p>
+              O trecho acima, comparado com nossos atuais desafios, indica que ainda temos um longo caminho a percorrer.
+            </p>
+            <p>
+              Fazendo um paralelo entre o passado e o presente, vemos, por exemplo, que em 2000, em cada mil nascidos, registravam-se 29 mortos. Em 2007, o ano da carta, o número era de 19,98 mortos. Em 2015, eram 13,82 crianças que morriam para cada mil nascidos vivos*. Uma grande evolução, mas ainda longe de países como Islândia (2,6), Suécia (2,7) e Chipre (2,8).
+            </p>
+            <p>
+              Portanto, é importante que o Brasil continue fortalecendo políticas que garantam uma vida digna e saudável às crianças. Mesmo sabendo que o zero é um número inalcançável nessa estatística, o país tem de mantê-lo como meta, pois perder uma vida que seja, é inaceitável.
+            </p>
+            <p>
+              Felizmente, a maioria das crianças brasileiras não faz parte dessa estatística. No entanto, por causa da grande desigualdade social que enfrentamos, elas têm dificuldades para alcançar o seu pleno potencial. Essas crianças são o presente e o futuro, e é por elas que a FMCSV tem trabalhado, desde 2007.
+            </p>
+            <p>
+              Um trabalho que é amplo porque tem de acontecer na:
+              <br>
+              família;
+              <br>
+              saúde;
+              <br>
+              educação;
+              <br>
+              comunidade e em toda a sociedade.
+            </p>
+            <p>
+              Justamente por causa da complexidade desse propósito, e por acreditar na amplitude da causa da Primeira Infância, é que a FMCSV tem como princípio atuar SEMPRE em parceria e com muito diálogo.
+            </p>
+            <p>
+              Em 2015 estabelecemos metas ousadas e desafiadoras. Ampliamos o diálogo, fortalecemos parcerias e geramos grandes conquistas, abaixo destaco algumas delas:
+              <br>
+              - a Fundação se orgulha de ter feito parte de um esforço que resultou na
+              <b>aprovação do Marco Legal da Primeira Infância na Câmara dos Deputados e no Senado e já sancionado pela presidente</b>
+              , sendo fruto “de um trabalho coletivo”;
+              <br>
+              - através do
+              <b>Núcleo Ciência pela Infância</b>
+              , colaboramos diretamente para o
+              <b>desenvolvimento de mais de 233 líderes</b>
+              , sendo que alguns deles, já em 2015, colocaram em prática seus planos de ação e
+              <b>impactaram positivamente muitas crianças pelo Brasil;</b>
+              <br>
+              <b>- o Programa São Paulo pela Primeira Infância (SPPI)</b>
+              se tornou política pública estadual, com previsão de
+              <b>alcançar 101 municípios</b>
+              até 2017. A tecnologia do programa foi sistematizada e está disponível para implantação em outros estados e municípios;
+              <br>
+              - testamos diferentes modelos e, de certa maneira, ousamos na busca para alcançar novas formas de
+              <b>sensibilizar a sociedade</b>
+              com informação relevante sobre a PI:
+              <br>
+              - a exibição, no Discovery Home & Health,
+              <b>da série “Quando tudo começa” foi assistida por mais de 1,2 milhão de espectadores;</b>
+              <br>
+              <b>- os três cadernos na Folha de São Paulo</b>
+              dedicados à Primeira Infância
+              <b>alcançaram 1,3 milhão de leitores</b>
+              , mais uma vez
+              <b>traduzindo a ciência para a sociedade; </b>
+              <br>
+              <b>-  “O Começo da Vida”</b>
+              , documentário filmado em nove países, mostra a importância dos primeiros anos de vida na formação de cada pessoa. Projeto de 3 anos que será lançado em maio de 2016.
+            </p>
+            <p>
+              O ano de 2015 foi também um ano de muita reflexão. Olhamos para fora e para dentro. Conversamos com especialistas do Brasil e do mundo. Estudamos modelos de atuação, de sucesso, de instituições que buscam promover o que chamamos de “mudança sistêmica” em todos os aspectos da Primeira Infância.
+            </p>
+            <p>
+              Procuramos entender como ampliar e ter mais impacto no nosso papel como um agente de mudança da realidade da nossa sociedade.
+            </p>
+            <p>
+              Terminamos 2015 com grandes transformações internas. Criamos uma área de Operações e Estratégia e, dentro dela, um Escritório de Projetos. As duas iniciativas visando ser mais eficientes e eficazes no nosso trabalho.
+            </p>
+            <p>
+              Fizemos nossa Revisão Estratégica, estabelecendo um foco maior e um olhar de longo prazo (2016-2021).
+            </p>
+            <p>
+              Para 2016, queremos mais resultados e mudanças, e assim continuamos nossa caminhada, inspirando-nos nas conquistas de outros e nos juntando a eles pela transformação do nosso país, sempre mirando nossa flecha no nosso objetivo, não importando a distância e os obstáculos que ela terá de percorrer.
+            </p>
+            <p>
+              Que venham mais 50 anos e um futuro promissor logo adiante.
+              <br>
+              Boa leitura!
+            </p>
+            <div class='text-sm uppercase'>
+              <b>Eduardo de C. Queiroz</b>
+              <p>Diretor-presidente da Fundação Maria Cecília Souto Vidigal</p>
+            </div>
+            <p>
+              <div class='text-sm'>* Fonte: IBGE</div>
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
     <section id='fundacao'>
       <div class='container'>
         <div class='row'>
@@ -142,7 +543,7 @@
         <div class='hidden-xs'>
           <div class='row'>
             <div class='col-md-3'>
-              <img src="images/fundacao/2017/esquerda-d0584537.png" />
+              <img src="images/fundacao/2017/esquerda-e6d83e24.png" />
             </div>
             <div class='col-md-6 graph'>
               <div class='tooltip-overlay'>
@@ -150,15 +551,15 @@
                 <div class='tip icon-text co-investimento' data-placement='bottom' data-toggle='tooltip' title='Modelo de financiamento: Composto pelo Fundo patrimonial, implementado em 2006, e Co-investimento, sistema no qual parceiros aportam investimentos financeiros nos projetos.'></div>
                 <div class='tip icon-text comunidade-cientifica' data-placement='bottom' data-toggle='tooltip' title='Membros da academia e profissionais/cientistas das áreas de saúde, educação e outras disciplinas relacionadas à infância'></div>
                 <div class='tip icon-text setor-3' data-placement='bottom' data-toggle='tooltip' title='3º setor: ONGs, institutos e fundações nacionais e internacionais que compartilham valores e/ou causa'></div>
-                <div class='tip icon-text empresas' data-placement='bottom' data-toggle='tooltip' title='Apoiadoras da nossa missão e dos projetos'></div>
-                <div class='tip icon-text governo' data-placement='bottom' data-toggle='tooltip' title='Profissionais dos âmbitos executivo, legislativo e judiciário'></div>
+                <div class='tip icon-text empresas' data-placement='bottom' data-toggle='tooltip' title='Empresas privadas de todos os setores apoiadoras da nossa missão e dos nossos projetos.'></div>
+                <div class='tip icon-text governo' data-placement='bottom' data-toggle='tooltip' title='Profissionais dos âmbitos executivo, legislativo e judiciário, nas esferas federais, estaduais e municipais.'></div>
                 <div class='tip icon-text projetos' data-placement='bottom' data-toggle='tooltip' title='Nossos projetos contam com a força da rede ativada pela Fundação para unir esforços em prol de mudanças e gerar e disseminar conhecimento sobre a Primeira Infância. Para mais detalhes, veja os Resultados do Ano e  o Mapa dos Projetos Realizados.'></div>
                 <div class='tip pais' style='position: absolute;    width: 12rem;    height: 12rem;    bottom: 14rem;    left: 22rem;' title='Adulto Referência: é a pessoa que convive rotineiramente, interage diretamente e estabelece os vínculos afetivos mais próximos durante os primeiros anos de vida de uma criança.'></div>
-                <div class='tip reeditores' style='position: absolute;    width: 8rem;    height: 10rem;    bottom: 32rem;    left: 13rem;' title='“É uma pessoa ou organização que tem público próprio; reconhecida socialmente com o potencial de transformar, introduzir e criar sentidos frente ao seu público, e assim ajudar a mobilizar a sociedade sobre a importância da primeira infância.”​ como por exemplo: imprensa, formadores de opinião, profissionais e comunidade científica'></div>
+                <div class='tip reeditores' style='position: absolute;    width: 8rem;    height: 10rem;    bottom: 32rem;    left: 13rem;' title='Pessoas e organizações que dialoguem com famílias de classes C/D, através de seus canais, com linguagem própria,  e assim possam ajudar a mobilizar a sociedade sobre a importância da primeira infância. Exemplo: imprensa, formadores de opinião, profissionais, comunidade científica.'></div>
                 <div class='tip liderancas' style='position: absolute;  position: absolute;    width: 11rem;    height: 10rem;    bottom: 31rem;    left: 33rem;  ' title='Lideranças Públicas: profissionais dos âmbitos legislativo, executivo e judiciário'></div>
               </div>
               <div class='text-center'>
-                <img src="images/fundacao/2017/graph-cabb16fd.png" />
+                <img src="images/fundacao/2017/graph-be3ed23a.png" />
               </div>
             </div>
             <div class='col-md-3'>
@@ -166,21 +567,21 @@
                 <h4 class='uppercase'>
                   <strong>Unir Esforços</strong>
                 </h4>
-                <p>Os avanços pela Primeira Infância só podem ser substanciais se trabalhados a várias mãos. É por isso que a Fundação realiza ações focadas na atuação conjunta entre setores público e privado, academia e da sociedade civil organizada.</p>
+                <p>Realizamos ações articuladas com os setores público e privado, com a academia e sociedade civil, porque acreditamos que os avanços pela primeira infância podem acontecer de maneira efetiva quando trabalhados conjuntamente.</p>
               </div>
               <br>
               <div class='knowledgement' style='margin-top: 152px;'>
                 <h4 class='uppercase'>
-                  <strong>Gestão do conhecimento</strong>
+                  <strong>Gerar e Disseminar Conhecimento</strong>
                 </h4>
-                <p>Significa criar, traduzir sistematizar e disseminar conteúdos sobre a Primeira Infância para oferecer à sociedade e, em especial, aos públicos de interesse, os argumentos e subsídios qualificados para que possam reconhecer, atuar e defender a causa.</p>
+                <p>Criamos, traduzimos, sistematizamos e disseminamos conteúdos sobre a primeira infância para oferecer à sociedade, especialmente aos públicos de nosso interesse, argumentos e subsídios para que reconheça, atue e defenda a causa.</p>
               </div>
               <br>
               <div class='change' style='margin-top: 104px;'>
                 <h4 class='uppercase'>
                   <strong>Mudar realidades</strong>
                 </h4>
-                <p>Projetos que levam a campo iniciativas que fortaleçam o desenvolvimento infantil para serem testadas, monitoradas e avaliadas. O objetivo é gerar conhecimentos sobre processos de intervenção e transformação social que possam ser disseminados e escalados.</p>
+                <p>Geramos e apoiamos iniciativas que transformem realidades e fortaleçam o desenvolvimento infantil, para serem testadas, monitoradas e avaliadas com o objetivo de escalar processos de intervenção e transformação social e disseminar esse conhecimento.</p>
               </div>
             </div>
           </div>
@@ -253,21 +654,21 @@
                 <h4 class='uppercase'>
                   <strong>Unir Esforços</strong>
                 </h4>
-                <p>Os avanços pela Primeira Infância só podem ser substanciais se trabalhados a várias mãos. É por isso que a Fundação realiza ações focadas na atuação conjunta entre setores público e privado, academia e da sociedade civil organizada.</p>
+                <p>Realizamos ações articuladas com os setores público e privado, com a academia e sociedade civil, porque acreditamos que os avanços pela primeira infância podem acontecer de maneira efetiva quando trabalhados conjuntamente.</p>
               </div>
               <br>
               <div class='knowledgement'>
                 <h4 class='uppercase'>
                   <strong>Gerar e disseminar conhecimento</strong>
                 </h4>
-                <p>Significa criar, traduzir sistematizar e disseminar conteúdos sobre a Primeira Infância para oferecer à sociedade e, em especial, aos públicos de interesse, os argumentos e subsídios qualificados para que possam reconhecer, atuar e defender a causa.</p>
+                <p>Criamos, traduzimos, sistematizamos e disseminamos conteúdos sobre a primeira infância para oferecer à sociedade, especialmente aos públicos de nosso interesse, argumentos e subsídios para que reconheça, atue e defenda a causa.</p>
               </div>
               <br>
               <div class='change'>
                 <h4 class='uppercase'>
                   <strong>Mudar realidades</strong>
                 </h4>
-                <p>Projetos que levam a campo iniciativas que fortaleçam o desenvolvimento infantil para serem testados, monitorados e avaliados. O objetivo é gerar conhecimentos sobre processos de intervenção e transformação social que possam ser disseminados e escalados.</p>
+                <p>Geramos e apoiamos iniciativas que transformem realidades e fortaleçam o desenvolvimento infantil, para serem testadas, monitoradas e avaliadas com o objetivo de escalar processos de intervenção e transformação social e disseminar esse conhecimento.</p>
               </div>
             </div>
           </div>
@@ -355,7 +756,7 @@
             </p>
             <p>
               A aprovação do
-              <a href='http://www.fmcsv.org.br/pt-br/Paginas/marco-legal.aspx' target='_blank'>
+              <a href='http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13257.htm' target='_blank'>
                 Marco Legal da Primeira Infância,
               </a>
               em março, abriu portas e destacou a importância da sociedade em garantir os direitos da criança. Em maio, o lançamento do documentário
@@ -434,27 +835,27 @@
           <div class='row'>
             <div class='col-md-1'></div>
             <div class='col-md-2'>
-                        <a class="graph-trigger" data-target="#result_target_1" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/1-0440bb47.png" />
+                        <a class="graph-trigger" data-target="#result_target_1" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/1-621e3866.png" />
               </a>
     
             </div>
             <div class='col-md-2'>
-                        <a class="graph-trigger" data-target="#result_target_2" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/2-29d58f64.png" />
+                        <a class="graph-trigger" data-target="#result_target_2" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/2-1b3ab7ff.png" />
               </a>
     
             </div>
             <div class='col-md-2'>
-                        <a class="graph-trigger" data-target="#result_target_3" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/3-8639dc36.png" />
+                        <a class="graph-trigger" data-target="#result_target_3" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/3-3108232b.png" />
               </a>
     
             </div>
             <div class='col-md-2'>
-                        <a class="graph-trigger" data-target="#result_target_4" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/4-fa6ecbf2.png" />
+                        <a class="graph-trigger" data-target="#result_target_4" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/4-fbb304f4.png" />
               </a>
     
             </div>
             <div class='col-md-2'>
-                        <a class="graph-trigger" data-target="#result_target_5" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/5-1390fbd1.png" />
+                        <a class="graph-trigger" data-target="#result_target_5" href="javascript:void(0)"><img class="img-responsive" src="images/resultados/v4/5-bfc3f971.png" />
               </a>
     
             </div>
@@ -466,31 +867,7 @@
           <div class='row graph-target' id='result_target_1'>
             <div class='col-md-1'></div>
             <div class='col-md-11'>
-              <div class='row result-legend'>
-                <div class='col-md-12'>
-                  <ul class='list-inline'>
-                    <li>
-                      <b>
-                        <i style="color: #e4616a;" class="fa fa-circle"></i> Meta não atingida
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #e6e576;" class="fa fa-circle"></i> Meta atingida (100%)
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #14cee2;" class="fa fa-star"></i> Meta superada
-                      </b>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class='row'>
-                <br>
-                <br>
-              </div>
+              
               <div class='row'>
                 <div class='col-md-12'>
                   <h4>
@@ -501,7 +878,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/11-4735f1ab.png" />
+                    <img src="images/resultados/v4/icon/11-d572ee75.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -510,16 +887,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -532,25 +909,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/12-e52cee74.png" />
+                    <img src="images/resultados/v4/icon/12-e61d9a8f.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
                   <h4 class='media-heading'>
-                    Mapeamento de modelo educacional para a Primeiríssima Infância
+                    Mapeamento de modelo educacional para a primeiríssima infância
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -563,25 +940,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/13-8e01f925.png" />
+                    <img src="images/resultados/v4/icon/13-e7badf2d.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='O atraso na entrega do estudo, em razão da complexidade de mapear o conjunto de indicadores que comporão o modelo, acarretou também um atraso significativo na entrega do projeto'>
+                <div class='media-body tip' title='O trabalho de aprofundamento no planejamento estratégico, feito em 2016, postergou a definição da lista de mensagens-chave para 2017.'>
                   <h4 class='media-heading'>
                     Definição de modelo de avaliação da Educação Infantil
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -594,25 +971,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/14-9df0a8d5.png" />
+                    <img src="images/resultados/v4/icon/14-2e1ce306.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='Um número maior de especialistas avaliou a primeira versão, o que, por um  lado, acarretou o atraso da finalização e, por outro, enriqueceu o conteúdo e definiu novas utilizações para a publicação. '>
                   <h4 class='media-heading'>
-                    Elaboração de “Guia de Comunicação sobre o Desenvolvimento da Primeira Infância”
+                    Elaboração de “Guia de Comunicação sobre o Desenvolvimento da primeira infância”
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -625,7 +1002,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/15-4d139630.png" />
+                    <img src="images/resultados/v4/icon/15-2abfb28e.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='O trabalho de aprofundamento no planejamento estratégico, feito no segundo semestre de 2016, postergou a definição da lista de mensagens-chave a todas as prioridades para o primeiro semestre de 2017.'>
@@ -634,16 +1011,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -656,7 +1033,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/16-1fb495d2.png" />
+                    <img src="images/resultados/v4/icon/16-8161b7ce.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='Um aprofundamento do entendimento da mensagem final, junto ao público-alvo, se fez necessário, o que atrasou a entrega do caderno para o primeiro trimestre de 2017.'>
@@ -665,16 +1042,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -687,7 +1064,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/17-988ffd9d.png" />
+                    <img src="images/resultados/v4/icon/17-bb58164b.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -696,16 +1073,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -720,31 +1097,7 @@
           <div class='row graph-target' id='result_target_2'>
             <div class='col-md-1'></div>
             <div class='col-md-11'>
-              <div class='row result-legend'>
-                <div class='col-md-12'>
-                  <ul class='list-inline'>
-                    <li>
-                      <b>
-                        <i style="color: #e4616a;" class="fa fa-circle"></i> Meta não atingida
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #e6e576;" class="fa fa-circle"></i> Meta atingida (100%)
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #14cee2;" class="fa fa-star"></i> Meta superada
-                      </b>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class='row'>
-                <br>
-                <br>
-              </div>
+              
               <div class='row'>
                 <div class='col-md-12'>
                   <h4>
@@ -755,7 +1108,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/21-3656a109.png" />
+                    <img src="images/resultados/v4/icon/21-dcb2923b.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -764,16 +1117,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -786,7 +1139,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/22-7cf79603.png" />
+                    <img src="images/resultados/v4/icon/22-ca486b38.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='As etapas relacionadas ao Programa Mãe Coruja Pernambucana foram finalizadas. A complexidade do processo fez com que a avaliação do PIM fosse adiada para 2017.'>
@@ -795,16 +1148,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -817,7 +1170,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/23-ae752a5f.png" />
+                    <img src="images/resultados/v4/icon/23-65021031.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='Todo o processo foi realizado e aguarda a aprovação final do Governador do Estado de São Paulo.'>
@@ -826,16 +1179,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -848,25 +1201,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/24-615f0f0f.png" />
+                    <img src="images/resultados/v4/icon/24-8206e64c.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
                   <h4 class='media-heading'>
-                    Identificação de Centros de Referência em PI** e negociação de estratégias de formação
+                    Identificação de Centros de Referência em primeira infância e negociação de estratégias de formação
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -879,25 +1232,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/25-7a6b8b17.png" />
+                    <img src="images/resultados/v4/icon/25-825a5fab.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
                   <h4 class='media-heading'>
-                    Sistematização e desenvolvimento de protótipos de comunicação sobre PI
+                    Sistematização e desenvolvimento de protótipos de comunicação sobre primeira infância
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -910,7 +1263,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/26-f3f96781.png" />
+                    <img src="images/resultados/v4/icon/26-ffb3d91c.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -919,16 +1272,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -941,7 +1294,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/27-a2bff37d.png" />
+                    <img src="images/resultados/v4/icon/27-8818913e.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='Um dos editais sofreu atraso na aprovação dos projetos em análise para 2017. '>
@@ -950,16 +1303,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -974,8 +1327,6 @@
                   <br>
                   <br>
                   * Programa São Paulo pela Primeiríssima Infância
-                  <br>
-                  ** Primeira Infância
                 </div>
               </div>
             </div>
@@ -983,31 +1334,7 @@
           <div class='row graph-target' id='result_target_3'>
             <div class='col-md-1'></div>
             <div class='col-md-11'>
-              <div class='row result-legend'>
-                <div class='col-md-12'>
-                  <ul class='list-inline'>
-                    <li>
-                      <b>
-                        <i style="color: #e4616a;" class="fa fa-circle"></i> Meta não atingida
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #e6e576;" class="fa fa-circle"></i> Meta atingida (100%)
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #14cee2;" class="fa fa-star"></i> Meta superada
-                      </b>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class='row'>
-                <br>
-                <br>
-              </div>
+              
               <div class='row'>
                 <div class='col-md-12'>
                   <h4>
@@ -1018,25 +1345,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/31-aa036236.png" />
+                    <img src="images/resultados/v4/icon/31-ad9baa74.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='O resultado ultrapassou expectativas. O curso em Harvard contou com a presença de representantes do Tribunal Superior de Justiça, do Executivo e do Legislativo das diferentes instâncias e da imprensa.'>
+                <div class='media-body tip' title='O resultado ultrapassou as expectativas, pois foram desenvolvidas diversas ações por parte de ex-alunos de forma a dar mais voz à primeira infância. Participaram representantes do Tribunal Superior de Justiça, do executivo e do legislativo das diferentes instâncias e da imprensa.'>
                   <h4 class='media-heading'>
                     Mobilização de lideranças pelo Programa de Liderança Executiva em Desenvolvimento da Primeira Infância
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-4'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
                       <i class="fa fa-star result-star"></i>
@@ -1052,7 +1379,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/32-18895161.png" />
+                    <img src="images/resultados/v4/icon/32-75f82385.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1061,16 +1388,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1083,25 +1410,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/33-31e646be.png" />
+                    <img src="images/resultados/v4/icon/33-c00384a6.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='O desenho do programa foi finalizado em 2016. Em função do trabalho de aprofundamento no planejamento estratégico, feito no segundo semestre de 2016, o início do projeto foi postergado para 2017. '>
+                <div class='media-body tip' title='O desenho do programa foi finalizado em 2016 e iniciaram-se as negociações para a estruturação de um curso avançado de gestão em que haja o acompanhamento e mentoria de determinado grupo de fellows.  Também foram estipulados os critérios para a seleção dos convidados. Os desdobramentos estão previstos para 2017.'>
                   <h4 class='media-heading'>
-                    Desenho do programa de fellowship da causa da Primeira Infância
+                    Desenho do Programa de Fellows Fundação Maria Cecilia e convites para novos participantes
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1114,38 +1441,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/34-87ad4737.png" />
-                  </h1>
-                </div>
-                <div class='media-body tip' title='O Trabalho de aprofundamento no planejamento estratégico, feito no segundo semestre de 2016, postergou a entrega do projeto para 2017. '>
-                  <h4 class='media-heading'>
-                    Lideranças convidadas e interessadas a participar do programa de fellowship
-                  </h4>
-                  <div class='row'>
-                    <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
-                    </div>
-                    <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
-                    </div>
-                    <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
-                    </div>
-                    <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
-                    </div>
-                  </div>
-                  <div class='row'>
-                    <div class='col-md-2'>
-                      <div class='pull-left'>0%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class='media'>
-                <div class='media-left'>
-                  <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/35-e58b2a48.png" />
+                    <img src="images/resultados/v4/icon/35-9fde7ca8.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='A iniciativa foi postergada para 2017.'>
@@ -1154,16 +1450,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1176,7 +1472,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/36-fb850163.png" />
+                    <img src="images/resultados/v4/icon/36-5378ae2f.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='O lançamento do filme “O Começo da Vida” ultrapassou as expectativas e obteve ótimos resultados. Veja na página do projeto'>
@@ -1185,16 +1481,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block blue'></div>
+                      <div class='block color-4'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
                       <i class="fa fa-star result-star"></i>
@@ -1210,7 +1506,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/37-1abd3218.png" />
+                    <img src="images/resultados/v4/icon/37-b15cc3b7.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1219,16 +1515,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1241,7 +1537,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/38-7d108205.png" />
+                    <img src="images/resultados/v4/icon/38-96b3aeab.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1250,16 +1546,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1274,31 +1570,7 @@
           <div class='row graph-target' id='result_target_4'>
             <div class='col-md-1'></div>
             <div class='col-md-11'>
-              <div class='row result-legend'>
-                <div class='col-md-12'>
-                  <ul class='list-inline'>
-                    <li>
-                      <b>
-                        <i style="color: #e4616a;" class="fa fa-circle"></i> Meta não atingida
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #e6e576;" class="fa fa-circle"></i> Meta atingida (100%)
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #14cee2;" class="fa fa-star"></i> Meta superada
-                      </b>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class='row'>
-                <br>
-                <br>
-              </div>
+              
               <div class='row'>
                 <div class='col-md-12'>
                   <h4>
@@ -1309,7 +1581,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/41-d5be48e7.png" />
+                    <img src="images/resultados/v4/icon/41-d781eca1.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1318,16 +1590,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1340,7 +1612,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/42-7e817d54.png" />
+                    <img src="images/resultados/v4/icon/42-d8f7a074.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1349,16 +1621,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1371,25 +1643,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/43-23b2d738.png" />
+                    <img src="images/resultados/v4/icon/43-452e550e.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='Participação nas articulações e encontros para discutir a Objetivo 4*** dos ODS, realizados pela Agência Regional de Primeira Infância para a América Latina.'>
+                <div class='media-body tip' title='Participação ainda informal nas articulações e encontros para discutir a meta 4*** dos ODS, realizados pela Agência Regional de Primeira Infância para a América Latina.'>
                   <h4 class='media-heading'>
                     Participação no grupo-chave dos ODS*** para estruturar agenda de primeira infância para o Brasil
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1402,7 +1674,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/44-d021a15d.png" />
+                    <img src="images/resultados/v4/icon/44-7572d787.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1411,16 +1683,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1444,31 +1716,7 @@
           <div class='row graph-target' id='result_target_5'>
             <div class='col-md-1'></div>
             <div class='col-md-11'>
-              <div class='row result-legend'>
-                <div class='col-md-12'>
-                  <ul class='list-inline'>
-                    <li>
-                      <b>
-                        <i style="color: #e4616a;" class="fa fa-circle"></i> Meta não atingida
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #e6e576;" class="fa fa-circle"></i> Meta atingida (100%)
-                      </b>
-                    </li>
-                    <li>
-                      <b>
-                        <i style="color: #14cee2;" class="fa fa-star"></i> Meta superada
-                      </b>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class='row'>
-                <br>
-                <br>
-              </div>
+              
               <div class='row'>
                 <div class='col-md-12'>
                   <h4>
@@ -1479,25 +1727,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/51-fda2451c.png" />
+                    <img src="images/resultados/v4/icon/51-4fa71a5f.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='Embora se tenha alcançado significativa melhora em algumas áreas da pesquisa, os índices ainda não atingiram o esperado para o ano.'>
+                <div class='media-body tip' title='Embora se tenha alcançado significativa melhora em algumas áreas da pesquisa, os índices estabelecidos como meta não foram atingidos.'>
                   <h4 class='media-heading'>
                     Melhoria nos resultados dos indicadores da pesquisa de clima
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1510,25 +1758,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/52-dd30722d.png" />
+                    <img src="images/resultados/v4/icon/52-477798c8.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='A iniciativa foi postergada para 2017.'>
+                <div class='media-body tip' title='Foi iniciado o trabalho de cultura organizacional (vide Estrutura Organizacional) e, nesse contexto, a iniciativa foi postergada para 2017.'>
                   <h4 class='media-heading'>
                     Mapeamento de competências disseminado em toda a equipe da Fundação
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1548,25 +1796,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/53-73f8b268.png" />
+                    <img src="images/resultados/v4/icon/53-3fdaffb6.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='A iniciativa foi postergada para 2017.'>
+                <div class='media-body tip' title=' As bases para avaliação de programas e projetos da Fundação vêm sendo aplicadas consistentemente na mensuração de resultados dos projetos. Entendeu-se que não era prioritária a formalização dessas bases em uma política.'>
                   <h4 class='media-heading'>
                     Política de avaliação de programas e projetos da Fundação
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1579,25 +1827,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/54-fa1d878c.png" />
+                    <img src="images/resultados/v4/icon/54-4aeddb28.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='A necessidade de refletir em todo sistema uma nova diretriz, com base no aprofundamento do planejamento estratégico, gerou o atraso dessa meta, a ser concluída em 2017.'>
+                <div class='media-body tip' title='O reposicionamento da Tecnologia da Informação não foi concluído em função da necessidade do aprofundamento e desdobramento do planejamento estratégico e de finalização do planejamento da marca.'>
                   <h4 class='media-heading'>
-                    Tecnologia da Informação repensada em face da estratégia 2016-2021
+                    Tecnologia da Informação repensada para a estratégia 2016-2021
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1610,25 +1858,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/55-db895f89.png" />
+                    <img src="images/resultados/v4/icon/55-6efb5afb.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='O aprofundamento do planejamento estratégico da Fundação postergou a finalização desse processo, que será entregue em 2017.'>
                   <h4 class='media-heading'>
-                    Planejamento da marca da Fundação criado e implementado
+                    Projeto do novo posicionamento da marca da Fundação alinhado à estratégia 2016-2021
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1641,7 +1889,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/56-113be893.png" />
+                    <img src="images/resultados/v4/icon/56-a6f1bf00.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1650,16 +1898,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1672,7 +1920,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/57-6c284b9c.png" />
+                    <img src="images/resultados/v4/icon/57-5f993270.png" />
                   </h1>
                 </div>
                 <div class='media-body tip' title='A iniciativa foi postergada para 2017.'>
@@ -1681,16 +1929,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1703,7 +1951,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/58-4b40fd3a.png" />
+                    <img src="images/resultados/v4/icon/58-5546a275.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1712,16 +1960,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1734,25 +1982,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/59-5eb37266.png" />
+                    <img src="images/resultados/v4/icon/59-5d5facab.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='Falta gerar mudança de cultura na equipe para utilização da ferramenta. Plano a ser implementado em 2017. '>
+                <div class='media-body tip' title='O sistema CRM foi implementado com sucesso do ponto de vista operacional. No entanto, ainda se faz necessária uma mudança de cultura na equipe para utilização da ferramenta, postura que deverá se dar ao longo do tempo. '>
                   <h4 class='media-heading'>
                     Implementação do sistema CRM
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block red'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1772,7 +2020,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/60-d05203f9.png" />
+                    <img src="images/resultados/v4/icon/60-6037f866.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1781,16 +2029,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1810,7 +2058,7 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal green' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/61-fdd6b5ec.png" />
+                    <img src="images/resultados/v4/icon/61-dd1c5124.png" />
                   </h1>
                 </div>
                 <div class='media-body'>
@@ -1819,16 +2067,16 @@
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-1'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-2'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-3'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block green'></div>
+                      <div class='block color-4'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1841,25 +2089,25 @@
               <div class='media'>
                 <div class='media-left'>
                   <h1 class='media-object goal red' style='margin:0; font-size: 60px;'>
-                    <img src="images/resultados/v4/icon/62-0a58ee4c.png" />
+                    <img src="images/resultados/v4/icon/62-1ccba3ee.png" />
                   </h1>
                 </div>
-                <div class='media-body tip' title='A iniciativa foi postergada para 2017.'>
+                <div class='media-body tip' title='A Fundação vem, ao longo dos anos, aumentando seu relacionamento e proximidade com parceiros (vide Coinvestimento 2016). Dessa forma, entendeu-se que a formalização de planos de longo prazo não era prioritária, postergando essa iniciativa.'>
                   <h4 class='media-heading'>
                     Planos de longo prazo pactuados com parceiros
                   </h4>
                   <div class='row'>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                     <div class='col-md-2' style='padding-right: 0;'>
-                      <div class='block grey'></div>
+                      <div class='block color-grey'></div>
                     </div>
                   </div>
                   <div class='row'>
@@ -1868,43 +2116,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id='premios'>
-      <div class='container-fluid'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-md-8 col-md-offset-2 text-center'>
-              <h2 class='title'>
-                Reconhecimentos
-              </h2>
-            </div>
-          </div>
-          <div class='row'>
-            <br>
-            <br>
-            <br>
-          </div>
-          <div class='row'>
-            <div class='col-md-10 col-md-offset-1 col-x-12'>
-              <div class='col-md-6'>
-                <img class="img-responsive pull-right" width="50%" src="images/premios/premio-32554b27.png" />
-              </div>
-              <div class='col-md-6'>
-                <p>
-                  <h3>
-                    <b>Medalha Zilda Arns</b>
-                  </h3>
-                </p>
-                <p class='text-big'>
-                  Em março, fomos uma das organizações contempladas com o
-                  <a class='text-blue' href='http://forquilhinha.sc.gov.br/noticias/index/ver/codMapaItem/5694/codNoticia/343658#.WOVwYDvyu00' target='_blank'>Prêmio Nacional Medalha Zilda Arns de Boas Práticas para a Primeira Infância,</a>
-                  que identifica e reconhece ações bem-sucedidas para favorecer o desenvolvimento integral de crianças.
-                </p>
               </div>
             </div>
           </div>
@@ -1938,12 +2149,12 @@
     
                 </li>
                 <li>
-                                <a class="uppercase" data-category="familias" data-behavior="category-filter" href="javascript:void(0);">SERVIÇO DE ATENÇÃO A FAMÍLIAS
+                                <a class="uppercase" data-category="familias" data-behavior="category-filter" href="javascript:void(0);">SERVIÇOS DE ATENÇÃO ÀS FAMÍLIAS
                   </a>
     
                 </li>
                 <li>
-                                <a class="uppercase" data-category="educacao" data-behavior="category-filter" href="javascript:void(0);">SERVIÇO DE EDUCAÇÃO INFANTIL
+                                <a class="uppercase" data-category="educacao" data-behavior="category-filter" href="javascript:void(0);">SERVIÇOS DE EDUCAÇÃO INFANTIL
                   </a>
     
                 </li>
@@ -1972,7 +2183,7 @@
                   <img src="images/projects/bullets/lideranca_1-d0d0c511.png" />
                   Lideranças (públicas, privadas ou sociais)
                 </li>
-                <li class='text-yellow uppercase'>
+                <li class='text-yellow uppercase tip' title='Pessoas e organizações que dialoguem com famílias de classes C/D, através de seus canais, com linguagem própria,  e assim possam ajudar a mobilizar a sociedade sobre a importância da primeira infância. Exemplo: imprensa, formadores de opinião, profissionais, comunidade científica.'>
                   <img src="images/projects/bullets/reeditores_1-efb257ac.png" />
                   Reeditores
                 </li>
@@ -2047,7 +2258,7 @@
                     <div class='col-md-3'>
                       <img class="tip" title="SOCIEDADE" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                       <img class="tip" title="LIDERANÇAS (PÚBLICAS, PRIVADAS OU SOCIAIS)" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
-                      <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_1-efb257ac.png" />
+                      <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_0-14b717a0.png" />
                     </div>
                     <div class='col-md-9'>
                       <a data-behavior='project-link' data-project-id='5' href='javascript:void(0)'>
@@ -2079,7 +2290,7 @@
                     </div>
                     <div class='col-md-9'>
                       <a data-behavior='project-link' data-project-id='7' href='javascript:void(0)'>
-                        Artemisia Lab Primeira Infância + Aceleradora
+                        Artemisia Lab Primeira Infância
                       </a>
                     </div>
                   </div>
@@ -2089,7 +2300,7 @@
                     <div class='col-md-3'>
                       <img class="tip" title="SOCIEDADE" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                       <img class="tip" title="LIDERANÇAS (PÚBLICAS, PRIVADAS OU SOCIAIS)" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
-                      <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_1-efb257ac.png" />
+                      <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_0-14b717a0.png" />
                     </div>
                     <div class='col-md-9'>
                       <a data-behavior='project-link' data-project-id='8' href='javascript:void(0)'>
@@ -2117,7 +2328,7 @@
                     <div class='col-md-3'>
                       <img class="tip" title="SOCIEDADE" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                       <img class="tip" title="LIDERANÇAS (PÚBLICAS, PRIVADAS OU SOCIAIS)" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
-                      <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_1-efb257ac.png" />
+                      <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_0-14b717a0.png" />
                     </div>
                     <div class='col-md-9'>
                       <a data-behavior='project-link' data-project-id='10' href='javascript:void(0)'>
@@ -2240,11 +2451,11 @@
                     </div>
                   </div>
                 </div>
-                <div class='project' data-categories='sociedade,politicas,familias,educacao'>
+                <div class='project' data-categories='sociedade,politicas'>
                   <div class='row'>
                     <div class='col-md-3'>
-                      <img class="tip" title="SOCIEDADE" src="images/projects/bullets/sociedade_1-f631d493.png" />
-                      <img class="tip" title="LIDERANÇAS (PÚBLICAS, PRIVADAS OU SOCIAIS)" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
+                      <img class="tip" title="SOCIEDADE" src="images/projects/bullets/sociedade_0-14b717a0.png" />
+                      <img class="tip" title="LIDERANÇAS (PÚBLICAS, PRIVADAS OU SOCIAIS)" src="images/projects/bullets/lideranca_0-14b717a0.png" />
                       <img class="tip" title="REEDITORES" src="images/projects/bullets/reeditores_1-efb257ac.png" />
                     </div>
                     <div class='col-md-9'>
@@ -2366,7 +2577,7 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      46 participantes, de 12 estados brasileiros, produziram 11 planos de ação, sendo 5 já iniciados ou implementados. 
+                      46 participantes, de 12 estados brasileiros, produziram 11 planos de ação, sendo 5 já iniciados ou implementados.
                     </div>
                   </div>
                   <br>
@@ -2394,7 +2605,14 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      A semente do <a href='http://www.fmcsv.org.br/pt-br/Paginas/marco-legal.aspx' target='_blank'> Marco Legal da Primeira Infância, </a> lei que reúne os direitos e deveres relacionados aos primeiros anos de vida, foi lançada nas primeiras edições do curso. Logo após, integrantes da <span class='tip' title='A Frente Parlamentar da Primeira Infância mantém entre seus membros ex-alunos do Programa Internacional de Liderança Executiva, inclusive o atual Ministro do Desenvolvimento Social e Agrário, o Sr. Osmar Terra.'> Frente Parlamentar da Primeira Infância </span> promoveram debates em diversas partes do País, favorecendo a aprovação e a sanção do Marco em março de 2016.
+                      Dr. Daniel Issler, Assessor da Vice-Presidência do Tribunal de Justiça de São Paulo, membro da Coordenadoria da Infância e da Juventude do Tribunal de Justiça do Estado de São Paulo e Juiz da Vara da Infância e Juventude de Guarulhos; gerou o projeto Primeira infância no Estado de São Paulo: o papel do sistema de garantia de direitos da criança e do adolescente, no Tribunal de Justiça de <a href='javascript:void(0);' data-behavior='project-link' data-project-id='16'> São Paulo.</a>
+                    </div>
+                  </div>
+                  <br>
+                  <div class='row'>
+                    <div class='col-md-12'>
+                      -
+                      A semente do <a href='http://www.fmcsv.org.br/pt-br/Paginas/marco-legal.aspx' target='_blank'> Marco Legal da Primeira Infância, </a> lei que reúne os direitos e deveres relacionados aos primeiros anos de vida, foi lançada nas primeiras edições do curso. Logo após, integrantes da Frente Parlamentar da Primeira Infância promoveram debates em diversas partes do País, favorecendo a aprovação e a sanção do Marco em março de 2016.
                     </div>
                   </div>
                   <br>
@@ -2596,7 +2814,7 @@
                       <p>
                         <b class='uppercase'>Objetivo</b>
                       </p>
-                      <p> Capacitar profissionais e lideranças, sensibilizar e informar a imprensa sobre a importância da primeira infância. </p> <p> A sexta edição teve como tema <a href='http://simposio.ncpi.org.br/Paginas/default.aspx' target='_blank'> “Primeira Infância: prioridade absoluta”. </a> Realizado em novembro, pela primeira vez o evento aconteceu fora de São Paulo, em Recife, PE, reunindo gestores públicos, pesquisadores e profissionais das áreas de saúde, educação e desenvolvimento social, presencialmente e <em>online</em>. Nas discussões com especialistas nacionais e internacionais, foram debatidas estratégias para colocar a Primeira Infância no centro da formulação e da implementação de políticas públicas, de programas e ações da sociedade. </p>
+                      <p> Capacitar profissionais e lideranças, sensibilizar e informar a imprensa sobre a importância da primeira infância. </p> <p> A sexta edição teve como tema <a href='https://www.youtube.com/playlist?list=PLvfZHqGPp_Mt2FtLrubOU3Ny6QsxojHHe' target='_blank'> “Primeira Infância: prioridade absoluta”. </a> Realizado em novembro, pela primeira vez o evento aconteceu fora de São Paulo, em Recife, PE, reunindo gestores públicos, pesquisadores e profissionais das áreas de saúde, educação e desenvolvimento social, presencialmente e <em>online</em>. Nas discussões com especialistas nacionais e internacionais, foram debatidas estratégias para colocar a primeira infância no centro da formulação e da implementação de políticas públicas, de programas e ações da sociedade. </p>
                     </div>
                   </div>
                   <br>
@@ -2734,7 +2952,7 @@
                       <p>
                         <b class='uppercase'>Objetivo</b>
                       </p>
-                      Sistematizar e disseminar os achados científicos, em linguagem acessível, para apoiar a criação de políticas públicas de Primeira Infância.
+                      Sistematizar e disseminar os achados científicos, em linguagem acessível, para apoiar a criação de políticas públicas de primeira infância.
                     </div>
                   </div>
                   <br>
@@ -2769,7 +2987,7 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      Divulgação do estudo <a href='http://www.fmcsv.org.br/pt-br/acervo-digital/Paginas/-Import%C3%A2ncia-dos-v%C3%ADnculos-familiares-na-primeira-inf%C3%A2ncia.aspx' target='_blank'> “Importância dos vínculos familiares na primeira infância” </a> na IX Semana de Valorização da Primeira Infância e Cultura da Paz, em novembro, no Senado Federal.<br/> * dado até 31/12/2016
+                      Divulgação do estudo <a href='http://www.fmcsv.org.br/pt-br/acervo-digital/Paginas/-Import%C3%A2ncia-dos-v%C3%ADnculos-familiares-na-primeira-inf%C3%A2ncia.aspx' target='_blank'> “Importância dos vínculos familiares na primeira infância” </a> na IX Semana de Valorização da Primeira Infância e Cultura da Paz, em novembro, no Senado Federal.<br/> <br/> * dado até 31/12/2016
                     </div>
                   </div>
                   <br>
@@ -2834,7 +3052,7 @@
                       <h3 class='project-title'>
                         <img class="tip" title="Articulação" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                         <img class="tip" title="Gestão do conhecimento" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
-                        <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_1-efb257ac.png" />
+                        <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_0-14b717a0.png" />
                         Programa São Paulo pela Primeiríssima Infância (SPPI)
                       </h3>
                     </div>
@@ -3076,7 +3294,7 @@
                         <img class="tip" title="Articulação" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                         <img class="tip" title="Gestão do conhecimento" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
                         <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_0-14b717a0.png" />
-                        Artemisia Lab Primeira Infância + Aceleradora
+                        Artemisia Lab Primeira Infância
                       </h3>
                     </div>
                   </div>
@@ -3116,49 +3334,7 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      166 inscrições
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      47 empreendedores de 28 negócios participantes
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      2 workshops de pré-aceleração
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      4 hangouts com especialistas
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      30 horas de formação e 11 mentores acionados
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      3 projetos selecionados para apoio financeiro e mentoria <a href='https://www.facebook.com/ArtemisiaNS/posts/1115234075191814?comment_id=1120898501292038&comment_tracking=%7B%22tn%22%3A%22R%22%7D' target='_blank'> (Descobrir Brincando, Bloomcoach e Adoleta) </a>
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      3 projetos finalistas contemplados com inscrições para o VI Simpósio Internacional (PapaBaba, Creche Segura e Céos)
+                      2 workshops de pré-aceleração, 4 seções de hangouts com especialistas, 30 horas de formação e 11 mentores acionados
                     </div>
                   </div>
                   <br>
@@ -3166,6 +3342,13 @@
                     <div class='col-md-12'>
                       -
                       Lançamento do estudo “Empreendedorismo e negócios de impacto social para a primeira infância”, entregue aos participantes. Aceleradora Artemisia (aceleração)
+                    </div>
+                  </div>
+                  <br>
+                  <div class='row'>
+                    <div class='col-md-12'>
+                      -
+                      3 projetos selecionados para apoio financeiro e mentoria <a href='https://www.facebook.com/ArtemisiaNS/posts/1115234075191814?comment_id=1120898501292038&comment_tracking=%7B%22tn%22%3A%22R%22%7D' target='_blank'> (Descobrir Brincando, Bloomcoach e Adoleta) </a>
                     </div>
                   </div>
                   <br>
@@ -3248,7 +3431,7 @@
                       <h3 class='project-title'>
                         <img class="tip" title="Articulação" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                         <img class="tip" title="Gestão do conhecimento" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
-                        <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_1-efb257ac.png" />
+                        <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_0-14b717a0.png" />
                         Editais de apoio à pesquisa
                       </h3>
                     </div>
@@ -3463,7 +3646,7 @@
                       <h3 class='project-title'>
                         <img class="tip" title="Articulação" src="images/projects/bullets/sociedade_0-14b717a0.png" />
                         <img class="tip" title="Gestão do conhecimento" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
-                        <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_1-efb257ac.png" />
+                        <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_0-14b717a0.png" />
                         Sistematização de práticas
                       </h3>
                     </div>
@@ -4159,7 +4342,7 @@
                       <p>
                         <b class='uppercase'>Objetivo</b>
                       </p>
-                      Realização de ações conjuntas que ajudem a promover os direitos da criança para sensibilizar e mobilizar os profissionais do Judiciário e de toda rede de garantia de direitos do Estado de São Paulo em defesa do desenvolvimento nos primeiros anos de vida.
+                      Realização de ações conjuntas que ajudem a promover os direitos da criança para sensibilizar e mobilizar os profissionais do Judiciário e de toda rede de garantia de direitos do Estado de São Paulo em defesa do desenvolvimento nos primeiros anos de vida. <p>Uma iniciativa do ex-aluno do Curso de Liderança Executiva, Doutor Daniel Issler.</p>
                     </div>
                   </div>
                   <br>
@@ -4345,7 +4528,7 @@
                   <br>
                   <div class='row'>
                     <div class='col-md-12'>
-                      Fundação Bernard van Leer e Instituto Alana
+                      Fundação Bernard van Leer, Instituto Alana e UNICEF
                     </div>
                   </div>
                   <br>
@@ -4358,7 +4541,7 @@
                   <br>
                   <div class='row'>
                     <div class='col-md-12'>
-                      Ashoka, World Bank, UBS Optimus Foundation, Banco internamericano de desenvolvimento, johnson´s, Kimberly clark (huggies), Natura, amil hipermarcas (pompom), Latam, Sesc, espaço filmes, videocamp, crescer, catraquinha, otima, readynation, united way, governo de são paulo, governo da bahia, governo do ceará, ifan, rede nacional primeira infancia, Centre for Early Childhood Development Prefeitura de sobral, instituto anísio teixeira.
+                      Ashoka, World Bank, UBS Optimus Foundation, Banco internamericano de desenvolvimento, johnson´s, Kimberly clark (huggies), Natura, amil hipermarcas (pompom), Latam, Sesc, espaço filmes, videocamp, crescer, catraquinha, otima, readynation, united way, governo de são paulo, Governo da bahia, Governo do Ceará, ifan, rede nacional primeira infância, Centre for Early Childhood Development, Prefeitura de sobral, instituto anísio teixeira.
                     </div>
                   </div>
                 </div>
@@ -4442,14 +4625,14 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      Crescimento de 45% de matérias sobre Primeira Infância de 2015 para 2016.
+                      Crescimento de 45% de matérias sobre primeira infância de 2015 para 2016.
                     </div>
                   </div>
                   <br>
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      Na pesquisa realizada em 2010, apenas 2,3% das matérias discutiam soluções para as questões da Primeira Infância. Em 2015, esse número pulou para 17%.
+                      Na pesquisa realizada em 2010, apenas 2,3% das matérias discutiam soluções para as questões da primeira infância. Em 2015, esse número pulou para 17%.
                     </div>
                   </div>
                   <br>
@@ -4463,7 +4646,7 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      Veiculação de matéria de capa da <a href='http://www.fmcsv.org.br/pt-br/noticias-e-eventos/Paginas/A-nova-fronteira-da-educa%C3%A7%C3%A3o-infantil.aspx' target='_blank'>revista Exame</a> e uma edição inteira sobre Primeira Infância do programa <a href='http://g1.globo.com/bemestar/noticia/2016/05/cerebro-dos-bebes-e-mais-suscetivel-modificacoes-e-ao-aprendizado.html' target='_blank'> Bem-Estar,</a> da TV Globo, realizadas por jornalistas que participaram do Programa de Liderança Executiva em Desenvolvimento da Primeira Infância.
+                      Veiculação de matéria de capa da <a href='http://www.fmcsv.org.br/pt-br/noticias-e-eventos/Paginas/A-nova-fronteira-da-educa%C3%A7%C3%A3o-infantil.aspx' target='_blank'>revista Exame</a> e uma edição inteira sobre Primeira Infância do programa <a href='http://g1.globo.com/bemestar/noticia/2016/05/cerebro-dos-bebes-e-mais-suscetivel-modificacoes-e-ao-aprendizado.html' target='_blank'> Bem-Estar,</a> da TV Globo, realizadas por jornalistas que participaram do <a href='javascript:void(0);' data-behavior='project-link' data-project-id='1'> Programa de Liderança Executiva em Desenvolvimento da Primeira Infância. </a>
                     </div>
                   </div>
                   <br>
@@ -4477,7 +4660,7 @@
               </div>
             </div>
             <div class='row'>
-              <div class='project' data-behavior='project' data-categories='sociedade,politicas,familias,educacao' data-project-id='19' id='project-19'>
+              <div class='project' data-behavior='project' data-categories='sociedade,politicas' data-project-id='19' id='project-19'>
                 <div class='col-md-1 projects-arrow-col hidden-xs'>
                   <a class='btn btn-border' data-behavior='projects-arrow' data-project-id='18' href='javascript:void(0)'>
                     <i class="fa fa-chevron-left"></i>
@@ -4513,8 +4696,8 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       <h3 class='project-title'>
-                        <img class="tip" title="Articulação" src="images/projects/bullets/sociedade_1-f631d493.png" />
-                        <img class="tip" title="Gestão do conhecimento" src="images/projects/bullets/lideranca_1-d0d0c511.png" />
+                        <img class="tip" title="Articulação" src="images/projects/bullets/sociedade_0-14b717a0.png" />
+                        <img class="tip" title="Gestão do conhecimento" src="images/projects/bullets/lideranca_0-14b717a0.png" />
                         <img class="tip" title="Práticas" src="images/projects/bullets/reeditores_1-efb257ac.png" />
                         Receite um Livro
                       </h3>
@@ -4639,7 +4822,10 @@
                       <p>
                         <b class='uppercase'>Objetivo</b>
                       </p>
-                      Disseminar a causa da Primeira Infância, utilizando diversos canais ( <a href='http://desenvolvimento-infantil.blog.br/' target='_blank'> blog, </a> <a href='http://www.fmcsv.org.br' target='_blank'> site da Fundação, </a> <a href='http://radardaprimeirainfancia.org.br/' target='_blank'> Radar da Primeira Infância, </a> <a href='https://www.youtube.com/channel/UCluihfX82z2uFvP2sH_IZxw' target='_blank'> canal no YouTube </a> e <a href='http://www.fmcsv.org.br/pt-br/o-que-fazemos/ncpi/Paginas/default.aspx' target='_blank'> site NCPI </a> ), para dialogar com as diferentes comunidades e compartilhar o conhecimento que geramos sobre o tema, sejam projetos ou publicações.
+                      Disseminar a causa da primeira infância, utilizando diversos canais ( <a href='http://www.fmcsv.org.br' target='_blank'> site da Fundação, </a> <a href='http://desenvolvimento-infantil.blog.br/' target='_blank'> blog, </a> <a href='https://www.facebook.com/fmcsv', target: '_blank'> Facebook,</a> <a href='https://www.linkedin.com/company-beta/1683680/', target='_blank'> Linkedin, </a>
+                      
+                      <a href='https://www.youtube.com/channel/UCluihfX82z2uFvP2sH_IZxw' target='_blank'> canal no YouTube </a>
+                      <a href='http://radardaprimeirainfancia.org.br/' target='_blank'> Radar da Primeira Infância, </a> e <a href='http://www.fmcsv.org.br/pt-br/o-que-fazemos/ncpi/Paginas/default.aspx' target='_blank'> site NCPI </a> ), para dialogar com as diferentes comunidades e compartilhar o conhecimento que geramos sobre o tema, sejam projetos ou publicações.
                     </div>
                   </div>
                   <br>
@@ -4653,56 +4839,7 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      Pesquisa para conhecer quem acessa os nossos canais digitais e como faz uso dos conteúdos que disseminamos:
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      95% têm interesse profissional e pessoal no tema da primeira infância. Predominantemente mulheres, com alto grau de escolaridade e de ampla faixa etária (82% estão entre 26 e 55 anos).
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      56% são da área da educação.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      25% são da área da saúde.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      A Fundação é tida como referência com alto grau de credibilidade, indicando que a estratégia seguida com profissionais até 2016 alcançou seu objetivo.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      87% do público quer ver conteúdos relacionados à primeira infância em formato de texto e 74%, em formato de vídeo.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      39% têm dificuldade para encontrar boas informações sobre a Primeira Infância na internet.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      76% do público busca conteúdo com aplicações práticas para famílias ou profissionais que atuam com a primeira infância.
+                      Pesquisa para conhecer quem acessa os nossos canais digitais e como faz uso dos conteúdos que disseminamos: <ul> <li>95% têm interesse profissional e pessoal no tema da primeira infância. Predominantemente mulheres, com alto grau de escolaridade e de ampla faixa etária (82% estão entre 26 e 55 anos).</li> <li>56% são da área da educação.</li> <li>25% são da área da saúde.</li> <li>A Fundação é tida como referência com alto grau de credibilidade, indicando que a estratégia seguida com profissionais até 2016 alcançou seu objetivo.</li> <li>87% do público quer ver conteúdos relacionados à primeira infância em formato de texto e 74%, em formato de vídeo. 39% têm dificuldade para encontrar boas informações sobre a Primeira Infância na internet. 76% do público busca conteúdo com aplicações práticas para famílias ou profissionais que atuam com a primeira infância.</li>
                     </div>
                   </div>
                   <br>
@@ -4723,21 +4860,7 @@
                   <div class='row'>
                     <div class='col-md-12'>
                       -
-                      Aumento de mais de 20% no número de seguidores da nossa página no Facebook.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      Radar da Primeira Infância foi repaginado e ganhou uma versão mobile com melhor navegabilidade.
-                    </div>
-                  </div>
-                  <br>
-                  <div class='row'>
-                    <div class='col-md-12'>
-                      -
-                      Blog também ganhou novo editorial e layout, sendo o nosso canal de maior sucesso com tempo médio de leitura de 10m16s.
+                      Aumento de mais de 20% no número de seguidores da nossa página no Facebook; o Radar da Primeira Infância foi repaginado e ganhou uma versão mobile com melhor navegabilidade; o Blog também ganhou novo editorial e layout, sendo o nosso canal de maior sucesso com tempo médio de leitura de 10m16s.
                     </div>
                   </div>
                   <br>
@@ -4820,7 +4943,7 @@
                       <p>
                         <b class='uppercase'>Objetivo</b>
                       </p>
-                      <p>Sensibilizar a sociedade para a importância do desenvolvimento da primeira infância, priorizando as classes C e D.</p> <p>Para isso, focamos em duas frentes de atuação: atividades de capacitação à equipe interna para o perfil dessa classe social e início do mapeamento de uma rede de reeditores para potencializar as mensagens relacionadas ao desenvolvimento da Primeira Infância, juntamente com testes de novas formas de comunicar o tema a esse público.</p>
+                      Sensibilizar a sociedade para a importância do desenvolvimento da primeira infância, priorizando as classes C e D. Para isso, focamos em duas frentes de atuação: atividades de capacitação à equipe interna para o perfil dessa classe social e início do mapeamento de uma rede de reeditores para potencializar as mensagens relacionadas ao desenvolvimento da primeira infância, juntamente com testes de novas formas de comunicar o tema a esse público.
                     </div>
                   </div>
                   <br>
@@ -6112,6 +6235,41 @@
         </div>
       </div>
     </div>
+    <section id='premios'>
+      <div class='container-fluid'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2 text-center'>
+              <h2 class='title'>
+                Reconhecimentos
+              </h2>
+            </div>
+          </div>
+          <div class='row'>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class='row'>
+            <div class='col-md-5'>
+              <img class="img-responsive pull-right" width="50%" src="images/premios/premio-32554b27.png" />
+            </div>
+            <div class='col-md-5'>
+              <p>
+                <h3>
+                  <b>Medalha Zilda Arns</b>
+                </h3>
+              </p>
+              <p class='text-big'>
+                Em março, fomos uma das organizações contempladas com o
+                <a class='text-blue' href='http://forquilhinha.sc.gov.br/noticias/index/ver/codMapaItem/5694/codNoticia/343658#.WOVwYDvyu00' target='_blank'>Prêmio Nacional Medalha Zilda Arns de Boas Práticas para a Primeira Infância,</a>
+                que identifica e reconhece ações bem-sucedidas para favorecer o desenvolvimento integral de crianças.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id='patrocinio'>
       <div class='container-fluid'>
         <div class='container'>
@@ -6132,30 +6290,64 @@
               <ul>
                 <li>
                   <b class='light-blue'>“Campanha Criança é Prioridade”,</b>
-                  realizada pela Rede Nacional Primeira Infância (RNPI), convocou os candidatos às eleições municipais a assinarem um compromisso de contemplar a primeira infância nas suas plataformas eleitorais por meio da implementação de planos municipais específicos. 
+                  realizada pela
+                  <a href='http://primeirainfancia.org.br/' target='_blank'>
+                    Rede Nacional Primeira Infância (RNPI),
+                  </a>
+                  convocou os candidatos às eleições municipais a assinarem um compromisso de contemplar a primeira infância na implementação de planos municipais específicos.
                 </li>
                 <li>
-                  <b class='light-blue'>RAPS – Rede de Ação Política pela Sustentabilidade</b>
-                  organizou um conjunto de ações para sensibilizar os futuros gestores municipais, membros da instituição, para o desenvolvimento integral na primeira infância como parte fundamental de sua ação política e de empreendedorismo social.
+                  <a href='https://www.raps.org.br/' target='_blank'>
+                    <b class='light-blue'>
+                      RAPS – Rede de Ação Política pela Sustentabilidade
+                    </b>
+                  </a>
+                  organizou um conjunto de ações para sensibilizar os futuros gestores municipais ao desenvolvimento integral na primeira infância como parte fundamental de sua ação política e de empreendedorismo social.
                 </li>
                 <li>
-                  <b class='light-blue'>“Agenda Prioritária para a Primeira Infância”,</b>
-                  protagonizada pela União Nacional dos Dirigentes Municipais de Educação (Undime), com ações estratégicas, traduzidas em iniciativas a serem assumidas pelos então candidatos a prefeituras municipais, orientando a formulação e a implementação de políticas públicas para a primeira infância. 
+                  <b class='light-blue'>“Agenda Prioritária para a primeira infância”,</b>
+                  protagonizada pela União Nacional dos Dirigentes Municipais de Educação
+                  <a href='https://undime.org.br/' target='_blank'>
+                    (Undime),
+                  </a>
+                  com ações a serem assumidas pelos candidatos a prefeituras para formulação de políticas públicas para a primeira infância. 
                 </li>
                 <li>
-                  <b class='light-blue'>“9º Congresso GIFE”,</b>
+                  <b class='light-blue'>
+                    “9º Congresso
+                    <a href='http://gife.org.br/' target='_blank'>
+                      GIFE”,
+                    </a>
+                  </b>
                   realizado em março, em São Paulo, com a apresentação do filme “O Começo da Vida”.
                 </li>
                 <li>
-                  <b class='light-blue'>Simpósio “O Papel da Estratégia Saúde da Família no Estímulo ao Desenvolvimento da Primeira Infância”,</b>
-                  realizado pelo Ministério da Saúde em parceria com a United Way, em março, em Brasília.
+                  <b class='light-blue'>Simpósio “O Papel da Estratégia Saúde da Família no Estímulo ao Desenvolvimento da primeira infância”,</b>
+                  realizado pelo
+                  <a href='http://portalsaude.saude.gov.br/' target='_blank'>
+                    Ministério da Saúde
+                  </a>
+                  em parceria com a
+                  <a href='http://www.unitedwaybrasil.org.br/' target='_blank'>
+                    United Way,
+                  </a>
+                  em março, em Brasília.
                 </li>
                 <li>
                   <b class='light-blue'>“Improving the Lives of Children: A UNL-Brazil Collaborative on Early Childhood Research and Practice”,</b>
-                  em parceria com a Universidade de Nebraska, em maio, quando foi anunciada a abertura do edital para financiamento de projetos brasileiros.
+                  em parceria com a
+                  <a href='https://www.unl.edu/' target='_blank'>
+                    Universidade de Nebraska,
+                  </a>
+                  em maio, quando foi anunciada a abertura do edital para financiamento de projetos brasileiros.
                 </li>
                 <li>
-                  <b class='light-blue'>“XXVI Congresso da ABMP”,</b>
+                  <b class='light-blue'>
+                    “XXVI Congresso da
+                    <a href='http://www.abmp.org.br/' target='_blank'>
+                      ABMP”,
+                    </a>
+                  </b>
                   realizado em maio, em Curitiba, com a
                   participação de profissionais das atividades relacionadas à primeira infância, que
                   também puderam assistir ao filme “O Começo da Vida”.
@@ -6166,27 +6358,51 @@
               <ul>
                 <li>
                   <b class='light-blue'>“III Mostra Internacional das Semanas do Bebê”,</b>
-                  iniciativa do UNICEF em parceria com o Governo do Estado de Pernambuco e o Governo Municipal de Recife, em maio. Exibição do filme “O Começo da Vida”, Roda de Diálogo de Políticas Integrais de Primeira Infância, mediada por nós, e palestra sobre parentalidade, com o professor Ricardo Nuno, da Universidade de Trás-os-Montes e Alto Douro, Portugal, nosso convidado.
+                  iniciativa do
+                  <a href='https://www.unicef.org/brazil/pt/' target='_blank'>
+                    UNICEF
+                  </a>
+                  em parceria com o Governo de Pernambuco e Prefeitura de Recife, em maio. Viabilizamos: exibição de “O Começo da Vida”, Roda de Diálogo de Políticas Integrais de Primeira Infância, palestra com Ricardo Nuno, Universidade de Trás-os-Montes e Alto Douro, Portugal.
                 </li>
                 <li>
-                  <b class='light-blue'>“IV Seminário Internacional do Marco Legal da Primeira Infância”,</b>
-                  iniciativa
-                  da Frente Parlamentar da primeira infância, em julho, no Senado Federal e na
-                  Câmara dos Deputados, com exibição do filme “O Começo da Vida”, audiências
-                  públicas sobre temas do Marco Legal e apresentação de programas de Primeira
-                  Infância, em desenvolvimento no Brasil e na América Latina.
+                  <b class='light-blue'>“IV Seminário Internacional do Marco Legal da primeira infância”,</b>
+                  iniciativa da
+                  <a href='http://marcolegalprimeirainfancia.com.br/' target='_blank'>
+                    Frente Parlamentar da Primeira Infância,
+                  </a>
+                  em julho, com exibição do filme “O Começo da Vida”, audiências públicas sobre temas do Marco Legal e apresentação de programas de primeira infância (Brasil e na América Latina).
                 </li>
                 <li>
                   <b class='light-blue'>“Construindo uma Educação Infantil de qualidade”,</b>
-                  realizado pelo Instituto Ayrton Senna, em novembro.
+                  realizado pelo
+                  <a href='http://www.institutoayrtonsenna.org.br/' target='_blank'>
+                    Instituto Ayrton Senna,
+                  </a>
+                  em novembro.
                 </li>
                 <li>
-                  <b class='light-blue'>Lançamento da série The Lancet</b>
-                  no Brasil, em evento realizado em novembro, em Brasília. Parceria com UNICEF, Banco Mundial, Organização Mundial da Saúde e United Way para cem lideranças públicas, a série, divulgada mundialmente ao longo de 2016, reforça a importância do investimento na primeira infância, trazendo à discussão o custo da inação dos governos e seu impacto na construção de uma sociedade melhor.
+                  <b class='light-blue'>
+                    Lançamento da série
+                    <a href='http://www.thelancet.com/' target='_blank'>
+                      The Lancet
+                    </a>
+                  </b>
+                  no Brasil, em novembro, em Brasília. Parceria com UNICEF,
+                  <a href='http://www.worldbank.org/pt/country/brazil' target='_blank'>
+                    Banco Mundial,
+                  </a>
+                  <a href='http://www.who.int/eportuguese/countries/bra/pt/' target='_blank'>
+                    Organização Mundial da Saúde
+                  </a>
+                  e United Way, a série, divulgada mundialmente, reforça a importância do investimento na primeira infância e o custo e o impacto social da inação dos governos.
                 </li>
                 <li>
                   <b class='light-blue'>“Semana de Valorização da primeira infância e Cultura da Paz”,</b>
-                  organizada pela Comissão de Valorização da Primeira Infância e Cultura da Paz, do Senado Federal, em novembro, em Brasília, com apresentação do documento “Importância dos Vínculos Familiares na Primeira Infância”, do NCPI.
+                  organizada pela
+                  <a href='https://www12.senado.leg.br/institucional/programas/primeira-infancia' target='_blank'>
+                    Comissão de Valorização da primeira infância e Cultura da Paz,
+                  </a>
+                  do Senado Federal, em novembro, em Brasília, com apresentação do documento “Importância dos Vínculos Familiares na primeira infância”, do NCPI.
                 </li>
               </ul>
             </div>
@@ -6205,10 +6421,9 @@
         </div>
         <div class='row text-justify'>
           <div class='col-md-10 col-md-offset-1'>
-            <p>O ano de 2016 foi marcado por uma intensa reflexão sobre os caminhos que iremos seguir. Dedicamo-nos a nos aprofundar na redefinição do planejamento estratégico, que começou em 2015, para adequá-lo às novas demandas da Primeira Infância, com base em pesquisas, estudos e discussões internas e com atores externos. Nosso objetivo é garantir que os valores da Fundação sejam claramente identificados nas estratégias e pessoas que formam a equipe.</p>
-            <p>Internamente, percebeu-se a importância de articular melhor as áreas, refletindo na equipe a mesma lógica do trabalho com a Primeira Infância, ou seja, uma atuação mais integrada.</p>
-            <p>O Escritório de Projetos e Avaliação assumiu a tarefa de fomentar iniciativas que fortaleçam o grupo para os desafios que se iniciam em 2017. Para isso, demos início ao projeto “Ser quem somos” para aprofundar a cultura organizacional, unindo passado e futuro em uma forma de trabalho que integre as áreas de maneira plena para que a missão da Fundação continue se cumprindo. Por isso, investimos no desenvolvimento e no bem-estar das pessoas.</p>
-            <p>As decisões tomadas receberam o respaldo de nossa governança, ou seja, dos Conselhos – de Curadores (deliberativo) e Fiscal (fiscalizador) – e dos Comitês de Investimento e de Comunicação (ambos consultivos), de Clima e de Ética (ambos internos), formados por profissionais voluntários, dedicados a fortalecer uma gestão que garanta a perenidade da Fundação, atividade que terá continuidade em 2017.</p>
+            <p>O ano de 2016 foi marcado por uma intensa reflexão sobre os caminhos a seguir. Aprofundamos o planejamento estratégico para o ciclo 2016 - 2021, cuja concepção iniciou-se em 2015, para desdobrá-lo em ações e projetos com base em pesquisas, estudos e discussões internas e com atores externos. Internamente, percebeu-se a importância de articular melhor as áreas, refletindo na equipe a mesma lógica do trabalho com a primeira infância, ou seja, uma atuação mais integrada. Demos assim início ao projeto “Ser quem somos” para aprofundar a cultura organizacional, unindo passado e futuro em uma forma de trabalho que integre as áreas de maneira plena para que a missão da Fundação continue se cumprindo. Acreditamos ser essencial o investimento no desenvolvimento e no bem-estar das pessoas. Nosso objetivo é garantir que os valores da Fundação sejam claramente identificados nas estratégias e naqueles que formam a equipe.</p>
+            <p>O Escritório de Projetos e Avaliação assumiu a tarefa de fomentar iniciativas que fortaleçam o grupo para os desafios trazidos pela nova estratégia. Nesse sentido, acompanhou de perto a evolução dos projetos com as equipes, desenvolveu, em parceria com a área de Tecnologia, ferramenta para aprimorar a gestão desses projetos, dando cada vez mais suporte e transparência a esse processo.  A Educação Infantil foi incorporada à nossa estrutura, tendo a sua prioridade no planejamento estratégico.</p>
+            <p>As decisões tomadas receberam o respaldo de nossa governança, ou seja, dos Conselhos – de Curadores (deliberativo) e Fiscal (fiscalizador) – e dos Comitês de Investimento e de Comunicação (ambos consultivos), formados por profissionais voluntários, dedicados a fortalecer uma gestão que garanta a perenidade da Fundação. Nesse sentido contamos com contamos com os Comitês de Clima e de Ética.</p>
           </div>
         </div>
         <br>
@@ -6265,6 +6480,26 @@
         </div>
       </div>
     </div>
+    <section id='fundo'>
+      <div class='container-fluid'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2'>
+              <h2 class='title text-center'>
+                FUNDO PATRIMONIAL
+              </h2>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2 text-justify'>
+              <p>O acompanhamento do Fundo Patrimonial e a orientação sobre sua movimentação são responsabilidades do Conselho de Curadores que o administra segundo a política de investimentos recomendada pelo Comitê de Investimentos. Assim como em todos os anos, em 2016, a gestão desses recursos foi otimizada pelo Comitê de Investimentos e pela equipe do Fundo Patrimonial, que ajustaram suas estratégias para minimizar perdas e superar a meta de rentabilidade de 4,5% acima da inflação (IPCA/IBGE).</p>
+              <p>A rentabilidade do Fundo Patrimonial foi de 18,2% no ano, 7,5% acima da meta traçada, e sofreu a influência do cenário econômico complexo do Brasil. Em 2016, o Fundo Patrimonial obteve uma receita de R$ 71,6 milhões, fruto das estratégias adotadas que favoreceram a solidez da carteira do Fundo, com ativos de maior proteção contra a inflação e instabilidades econômicas futuras. Tudo para garantir a preservação e perenidade do patrimônio da Fundação e, consequentemente, a sua missão, mesmo em tempos difíceis.</p>
+              <p>O uso dos recursos do Fundo Patrimonial é aprovado anualmente pelo Conselho de Curadores a partir de um orçamento elaborado pela nossa equipe, contando com o acompanhamento do curador de fundações do Ministério Público de São Paulo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id='gestao'>
       <div class='container'>
         <div class='row'>
@@ -6274,21 +6509,11 @@
         </div>
         <div class='row text-justify'>
           <div class='col-md-10 col-md-offset-1'>
-            <p>Todas as estratégias da gestão dos recursos, que sustentam as iniciativas realizadas ou apoiadas pela Fundação, estão embasadas em três aspectos-chave que se inter-relacionam:</p>
-            <ul>
-              <li>Preservação e perenidade do patrimônio da instituição.</li>
-              <li>Visão de longo prazo para cumprir a missão.</li>
-              <li>Potencialização dos resultados.</li>
-            </ul>
-            <p>
-              Em 2016, os valores investidos, destinados diretamente aos projetos, somaram
-              R$9,4 milhões.
-              Contabilizamos receitas com patrocínios e doações para investimento nos projetos sociais em que aportamos recursos, no valor de R$2,4 milhões.
-            </p>
-            <p>
-              Ademais, estimamos que nossos parceiros destinaram recursos ou realizaram ações, em desdobramento aos projetos em que alocamos recursos, no valor adicional de R$6,7 milhões, o que chamamos de coinvestimento.
-              Nossas demonstrações, auditadas pela Grant Thornton e aprovadas em todos os quesitos, podem ser acessadas no nosso site.
-            </p>
+            <p>A partir da rentabilidade do Fundo Patrimonial e do orçamento anual aprovado pelo Conselho de Curadores, a Fundação realiza ou apoia as iniciativas que contribuem para o atingimento dos objetivos estabelecidos no planejamento estratégico.</p>
+            <p>Dessa forma, a gestão financeira dos recursos disponíveis anualmente está embasada na visão de longo prazo, para cumprir a missão da Fundação, e na potencialização de resultados.</p>
+            <p>Em 2016, os valores investidos diretamente nos projetos somaram R$9,4 milhões. Contabilizamos receitas com patrocínios e doações para investimento nos projetos em que aportamos R$2,4 milhões.</p>
+            <p>Estimamos ainda que nossos parceiros destinaram recursos ou realizaram ações, em desdobramento aos projetos em que alocamos recursos, no valor adicional de R$ 6,7 milhões, o que chamamos de coinvestimento.</p>
+            <p>Nossas demonstrações, auditadas pela Grant Thornton e aprovadas em todos os quesitos, podem ser acessadas no nosso site.</p>
           </div>
         </div>
         <div class='row'>
@@ -6320,9 +6545,16 @@
           <div class='col-md-8 col-md-offset-2'>
             <table class='table'>
               <thead>
-                <th width='80%'>ATIVO</th>
+                <th width='80%'></th>
                 <th width='10%'>2015</th>
                 <th width='10%'>2016</th>
+              </thead>
+            </table>
+            <table class='table'>
+              <thead>
+                <th width='80%'>ATIVO</th>
+                <th width='10%'></th>
+                <th width='10%'></th>
               </thead>
               <tbody>
                 <tr>
@@ -6378,7 +6610,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Fornecedores</td>
+                  <td>Contas a Pagar</td>
                   <td>505</td>
                   <td>575</td>
                 </tr>
@@ -6400,11 +6632,6 @@
                 <tr>
                   <td>Outras obrigações</td>
                   <td>97</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>Provisão de contingências</td>
-                  <td>-</td>
                   <td>-</td>
                 </tr>
                 <tr class='total'>
@@ -6435,7 +6662,7 @@
                   <td>401.251</td>
                 </tr>
                 <tr>
-                  <td>Déficit acumulado</td>
+                  <td>Superavit acumulado</td>
                   <td>23.643</td>
                   <td>56.897</td>
                 </tr>
@@ -6445,7 +6672,7 @@
                     <b>401.251</b>
                   </td>
                   <td>
-                    <b>458.14</b>
+                    <b>458.148</b>
                   </td>
                 </tr>
                 <tr class='total no-pad'>
@@ -6454,7 +6681,7 @@
                     <b>402.818</b>
                   </td>
                   <td>
-                    <b>460.20</b>
+                    <b>460.205</b>
                   </td>
                 </tr>
               </tbody>
@@ -6467,9 +6694,7 @@
         <div class='row'>
           <div class='col-md-12'>
             <h3 class='title'>
-              Demonstração do
-              <i>superavit</i>
-              do exercício
+              Demonstração de resultado do exercício
             </h3>
           </div>
         </div>
@@ -6510,18 +6735,13 @@
                   <td>339</td>
                   <td>313</td>
                 </tr>
-                <tr>
-                  <td>Renúncia fiscal</td>
-                  <td>–(*)</td>
-                  <td>–(*)</td>
-                </tr>
                 <tr class='total'>
                   <td class='text-big'>TOTAL - RECEITAS OPERACIONAIS DAS ATIVIDADES</td>
                   <td>
-                    <b>1.35</b>
+                    <b>1.355</b>
                   </td>
                   <td>
-                    <b>2.79</b>
+                    <b>2.793</b>
                   </td>
                 </tr>
               </tbody>
@@ -6539,13 +6759,13 @@
               <tbody>
                 <tr>
                   <td>Despesa com pessoal</td>
-                  <td>2.04</td>
-                  <td>2.94</td>
+                  <td>2.047</td>
+                  <td>2.943</td>
                 </tr>
                 <tr>
                   <td>Despesas com serviços de terceiros</td>
-                  <td>4.14</td>
-                  <td>5.87</td>
+                  <td>4.145</td>
+                  <td>5.870</td>
                 </tr>
                 <tr>
                   <td>Despesas com viagens</td>
@@ -6564,16 +6784,16 @@
                 </tr>
                 <tr>
                   <td>Despesas com patrocínios e doações</td>
-                  <td>3.99</td>
-                  <td>3.33</td>
+                  <td>3.998</td>
+                  <td>3.335</td>
                 </tr>
                 <tr class='total'>
                   <td class='text-big'>TOTAL - DESPESAS DAS ATIVIDADES (Projetos sociais e Patrocínios)</td>
                   <td>
-                    <b>11.49</b>
+                    <b>11.496</b>
                   </td>
                   <td>
-                    <b>13.61</b>
+                    <b>13.610</b>
                   </td>
                 </tr>
                 <tr>
@@ -6586,17 +6806,12 @@
                   <td>
                     11.835
                   </td>
-                  <td></td>
+                  <td>13.923</td>
                 </tr>
                 <tr>
                   <td>Trabalho voluntário</td>
                   <td>339</td>
                   <td>313</td>
-                </tr>
-                <tr>
-                  <td>Renúncia fiscal</td>
-                  <td>–(*)</td>
-                  <td>–(*)</td>
                 </tr>
               </tbody>
             </table>
@@ -6607,18 +6822,18 @@
             <table class='table'>
               <tbody>
                 <tr>
-                  <td class='text-big' width='80%'>RESULTADO OPERACIONAL ANTES DAS DESPESAS ADMINISTRATIVAS</td>
-                  <td width='10%'>
-                    <b>7.852</b>
-                  </td>
+                  <td class='text-big' style='padding-left:0;' width='80%'>RESULTADO OPERACIONAL ANTES DAS DESPESAS ADMINISTRATIVAS</td>
                   <td width='10%'>
                     <b>10.481</b>
+                  </td>
+                  <td width='10%'>
+                    <b>11.130</b>
                   </td>
                 </tr>
                 <tr>
                   <td>Despesa com pessoal</td>
-                  <td>2.41</td>
-                  <td>2.57</td>
+                  <td>2.415</td>
+                  <td>2.576</td>
                 </tr>
                 <tr>
                   <td>Despesa gerais e administrativas</td>
@@ -6652,8 +6867,8 @@
                 </tr>
                 <tr>
                   <td>Outras receitas operacionais</td>
-                  <td>(320)</td>
-                  <td>(98)</td>
+                  <td>-320</td>
+                  <td>-94</td>
                 </tr>
                 <tr>
                   <td></td>
@@ -6663,19 +6878,19 @@
                 <tr class='total'>
                   <td class='text-big'>TOTAL - DESPESAS ADMNISTRATIVAS</td>
                   <td>
-                    <b>3.93</b>
+                    <b>3.936</b>
                   </td>
                   <td>
-                    <b>4.10</b>
+                    <b>4.106</b>
                   </td>
                 </tr>
                 <tr class='total'>
                   <td class='text-big'>RECEITAS / DESPESAS FINANCEIRAS</td>
                   <td>
-                    <b>38.06</b>
+                    <b>38.060</b>
                   </td>
                   <td>
-                    <b>72.13</b>
+                    <b>72.133</b>
                   </td>
                 </tr>
                 <tr class='total'>
@@ -6686,10 +6901,10 @@
                     DO EXERCÍCIO
                   </td>
                   <td>
-                    <b>23.64</b>
+                    <b>23.643</b>
                   </td>
                   <td>
-                    <b>56.89</b>
+                    <b>56.897</b>
                   </td>
                 </tr>
               </tbody>
@@ -6712,45 +6927,6 @@
       <div class='container-fluid'>
         <div class='container'>
           <div class='row'>
-            <div class='col-md-8 col-md-offset-2'>
-              <h2 class='title text-center'>
-                FUNDO PATRIMONIAL
-              </h2>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-md-8 col-md-offset-2 text-justify'>
-              <p>
-                A gestão e a governança do Fundo Patrimonial são responsabilidades do Conselho de
-                Curadores que o administra segundo a política de investimentos recomendada pelo
-                Comitê de Investimentos. O uso dos recursos do Fundo Patrimonial é aprovado
-                anualmente pelo Conselho sob a forma de um orçamento elaborado pela nossa
-                equipe, contando com o acompanhamento do curador de fundações do Ministério
-                Público de São Paulo.
-              </p>
-              <p>
-                Assim como em todos os anos, em 2016, a utilização desses recursos foi otimizada pelo
-                Comitê de Investimentos e pela equipe do Fundo Patrimonial, que planejaram suas
-                estratégias para minimizar perdas e superar a meta de rentabilidade de 4,5% mais
-                inflação (IPCA/IBGE).
-              </p>
-              <p>
-                O resultado da rentabilidade anual do Fundo Patrimonial foi de 18,24% no ano, 7,46%
-                acima da meta traçada, que sofreu a influência do cenário econômico complexo do
-                Brasil. Em 2016 o Fundo Patrimonial obteve uma receita de R$ 71,608 milhões, fruto
-                das estratégias adotadas que favoreceram a solidez da carteira do Fundo, com ativos
-                de maior proteção contra a inflação e instabilidades econômicas futuras. Tudo para
-                garantir a perenidade e a missão da Fundação, mesmo em tempos difíceis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id='fundo'>
-      <div class='container-fluid'>
-        <div class='container'>
-          <div class='row'>
             <div class='col-md-6 col-md-offset-3'>
               <br>
               <br>
@@ -6762,7 +6938,7 @@
               <br>
               <br>
               <br>
-              <img class="img-responsive " src="images/fundo/grafico_fundo-8bb4286c.png" />
+              <img class="img-responsive " src="images/fundo/grafico_fundo-c61fc98a.png" />
             </div>
           </div>
         </div>
@@ -6841,12 +7017,12 @@
                   <div class='col-md-1'></div>
                   <div class='col-md-2 col-xs-12'>
                     <div class='text-center'>
-                      <img style="max-width:100%;" width="100px" src="images/parceiros/11-0d1c5ce9.png" />
+                      <img style="max-width:100%;" width="100px" src="images/parceiros/11-95d8f856.png" />
                     </div>
                   </div>
                   <div class='col-md-2 col-xs-12'>
                     <div class='text-center'>
-                      <img style="max-width:100%;" width="100px" src="images/parceiros/12-95d8f856.png" />
+                      <img style="max-width:100%;" width="100px" src="images/parceiros/12-0d1c5ce9.png" />
                     </div>
                   </div>
                   <div class='col-md-2 col-xs-12'>
@@ -7006,10 +7182,10 @@
                   <img class="img-responsive center-block" width="70%" src="images/parceiros/10-9a3e03c3.png" />
                 </div>
                 <div class='col-xs-6'>
-                  <img class="img-responsive center-block" width="70%" src="images/parceiros/11-0d1c5ce9.png" />
+                  <img class="img-responsive center-block" width="70%" src="images/parceiros/11-95d8f856.png" />
                 </div>
                 <div class='col-xs-6'>
-                  <img class="img-responsive center-block" width="70%" src="images/parceiros/12-95d8f856.png" />
+                  <img class="img-responsive center-block" width="70%" src="images/parceiros/12-0d1c5ce9.png" />
                 </div>
                 <div class='col-xs-6'>
                   <img class="img-responsive center-block" width="70%" src="images/parceiros/13-f54ea34a.png" />
@@ -7135,18 +7311,8 @@
                   </a>
                 </li>
                 <li class='uppercase'>
-                  <a href='http://www.radardaprimeirainfancia.org.br' target='_blank'>
-                    <img width="41px" src="images/footer/radar-9e6b7566.png" />
-                  </a>
-                </li>
-                <li class='uppercase'>
                   <a href='http://desenvolvimento-infantil.blog.br' target='_blank'>
                     <img width="41px" src="images/footer/blog-72a1f31d.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href='https://www.facebook.com/fmcsv' target='_blank'>
-                    <img width="41px" src="images/footer/linkedin-7e3f2784.png" />
                   </a>
                 </li>
                 <li>
@@ -7155,13 +7321,18 @@
                   </a>
                 </li>
                 <li>
-                  <a href='https://twitter.com/fmcsv' target='_blank'>
-                    <img width="41px" src="images/footer/twitter-c23ee7bd.png" />
+                  <a href='https://www.linkedin.com/company-beta/1683680/' target='_blank'>
+                    <img width="41px" src="images/footer/linkedin-7e3f2784.png" />
                   </a>
                 </li>
                 <li>
                   <a href='https://www.youtube.com/user/FMCSV' target='_blank'>
                     <img width="41px" src="images/footer/youtube-d6993c12.png" />
+                  </a>
+                </li>
+                <li class='uppercase'>
+                  <a href='http://www.radardaprimeirainfancia.org.br' target='_blank'>
+                    <img width="41px" src="images/footer/radar-9e6b7566.png" />
                   </a>
                 </li>
               </ul>
@@ -7171,6 +7342,6 @@
         </div>
       </div>
     </section>
-    <script src="javascripts/all-7c983b7e.js" relative="true" type="text/javascript"></script>
+    <script src="javascripts/all-853356b1.js" relative="true" type="text/javascript"></script>
   </body>
 </html>
